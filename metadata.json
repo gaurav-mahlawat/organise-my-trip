@@ -1,0 +1,6 @@
+{
+  "name": "Organise My Trip",
+  "description": "Local Rajasthan travel company · Since 2011. Authentic private tour packages, verified taxi service across Rajasthan, desert & cultural experiences, and custom itinerary planning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
