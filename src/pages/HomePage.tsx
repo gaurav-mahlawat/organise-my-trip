@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import { useRouter } from '../context/RouterContext';
-import { TOUR_PACKAGES } from '../data/packagesData';
-import { DESTINATIONS } from '../data/destinationsData';
-import { ACTIVITIES } from '../data/activitiesData';
-import { TAXI_VEHICLES, TAXI_ROUTES } from '../data/taxiData';
-import { BLOG_POSTS } from '../data/blogData';
+import { useData } from '../context/DataContext';
 import { EnquiryForm } from '../components/common/EnquiryForm';
 import { 
   ShieldCheck, 
@@ -30,6 +26,14 @@ import {
 
 export const HomePage: React.FC = () => {
   const { navigate, openEnquiryModal, getWhatsAppLink } = useRouter();
+  const {
+    tourPackages: TOUR_PACKAGES,
+    destinations: DESTINATIONS,
+    activities: ACTIVITIES,
+    taxiVehicles: TAXI_VEHICLES,
+    taxiRoutes: TAXI_ROUTES,
+    blogPosts: BLOG_POSTS
+  } = useData();
 
   // Filter state for featured packages
   const [packageCategory, setPackageCategory] = useState<string>('All');
@@ -197,7 +201,7 @@ export const HomePage: React.FC = () => {
               onClick={() => navigate('/tour-by-destination/jaipur')}
               className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-900 group"
             >
-              <span>Explore All 8 Guides</span>
+              <span>Explore All 9 Guides</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </button>
           </div>
@@ -225,7 +229,7 @@ export const HomePage: React.FC = () => {
 
                 <div className="p-4 space-y-1">
                   <div className="text-[11px] font-bold text-amber-800 tracking-wide uppercase">
-                    {dest.tagline}
+                    {dest.tagline || dest.nickname}
                   </div>
                   <h3 className="font-serif font-bold text-base text-slate-900 group-hover:text-amber-800 transition-colors">
                     {dest.name}
@@ -234,7 +238,7 @@ export const HomePage: React.FC = () => {
                     {dest.description}
                   </p>
                   <div className="pt-2 flex items-center justify-between text-[11px] text-slate-400 font-medium">
-                    <span>Ideal: {dest.bestMonths}</span>
+                    <span>Ideal: {dest.bestMonths || dest.bestTimeToVisit}</span>
                     <span className="text-amber-700 font-bold group-hover:translate-x-1 transition-transform">
                       View →
                     </span>

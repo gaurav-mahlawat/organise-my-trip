@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { useRouter } from '../context/RouterContext';
-import { TAXI_ROUTES, TAXI_VEHICLES } from '../data/taxiData';
+import { useData } from '../context/DataContext';
 import { EnquiryForm } from '../components/common/EnquiryForm';
 import { Search, Car, MapPin, Check, ShieldCheck, ArrowUpDown } from 'lucide-react';
 
 export const TaxiRoutesHubPage: React.FC = () => {
   const { navigate, openEnquiryModal } = useRouter();
+  const { taxiRoutes: TAXI_ROUTES, taxiVehicles: TAXI_VEHICLES } = useData();
   const [search, setSearch] = useState('');
 
   const filteredRoutes = TAXI_ROUTES.filter(r => 

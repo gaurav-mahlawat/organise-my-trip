@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useRouter } from '../context/RouterContext';
-import { TOUR_PACKAGES } from '../data/packagesData';
+import { useData } from '../context/DataContext';
 import { EnquiryForm } from '../components/common/EnquiryForm';
 import { 
   MapPin, 
@@ -20,6 +20,7 @@ import {
 
 export const PackageDetailPage: React.FC = () => {
   const { params, navigate, openEnquiryModal, getWhatsAppLink } = useRouter();
+  const { tourPackages: TOUR_PACKAGES } = useData();
   const slug = params.slug || 'royal-rajasthan-highlights';
 
   const pkg = TOUR_PACKAGES.find(p => p.slug === slug) || TOUR_PACKAGES[0];

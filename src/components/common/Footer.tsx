@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
                 <MapPin className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                 <div>
                   <strong className="text-white block">Organise My Trip:</strong>
-                  Jaipur · Rajasthan · India
+                  910, 7th Floor, Anchor Mall, Nr. Civil Lines Metro Station, Ajmer Road, Jaipur – 302006
                 </div>
               </div>
               <div className="flex items-center gap-2 text-slate-300 pt-1">
@@ -272,6 +272,16 @@ export const Footer: React.FC = () => {
               <li>
                 <button onClick={() => navigate('/tour-by-destination/jaisalmer')} className="hover:text-amber-400 text-left">
                   Jaisalmer (The Golden City) Guide
+                </button>
+              </li>
+              <li>
+                <button onClick={() => navigate('/tour-by-destination/ajmer')} className="hover:text-amber-400 text-left">
+                  Ajmer (Sufi Pilgrimage City) Guide
+                </button>
+              </li>
+              <li>
+                <button onClick={() => navigate('/tour-by-destination/pushkar')} className="hover:text-amber-400 text-left">
+                  Pushkar (Holy Lake Town) Guide
                 </button>
               </li>
               <li>

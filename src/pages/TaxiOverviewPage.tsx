@@ -1,11 +1,12 @@
 import React from 'react';
 import { useRouter } from '../context/RouterContext';
-import { TAXI_VEHICLES, TAXI_ROUTES } from '../data/taxiData';
+import { useData } from '../context/DataContext';
 import { EnquiryForm } from '../components/common/EnquiryForm';
 import { Car, ShieldCheck, Check, Clock, MapPin, ArrowRight, MessageCircle, Phone, Award } from 'lucide-react';
 
 export const TaxiOverviewPage: React.FC = () => {
   const { navigate, openEnquiryModal, getWhatsAppLink } = useRouter();
+  const { taxiVehicles: TAXI_VEHICLES, taxiRoutes: TAXI_ROUTES } = useData();
 
   return (
     <div className="w-full bg-stone-50 py-10 sm:py-14">

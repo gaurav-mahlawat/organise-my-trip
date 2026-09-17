@@ -1,12 +1,12 @@
 import React from 'react';
 import { useRouter } from '../context/RouterContext';
-import { DESTINATIONS } from '../data/destinationsData';
-import { TOUR_PACKAGES } from '../data/packagesData';
+import { useData } from '../context/DataContext';
 import { EnquiryForm } from '../components/common/EnquiryForm';
 import { MapPin, Calendar, Plane, Train, Clock, ArrowRight, Sparkles, Check, Car } from 'lucide-react';
 
 export const DestinationGuidePage: React.FC = () => {
   const { params, navigate } = useRouter();
+  const { destinations: DESTINATIONS, tourPackages: TOUR_PACKAGES } = useData();
   const slug = params.slug || 'jaipur';
 
   const dest = DESTINATIONS.find(d => d.slug === slug) || DESTINATIONS[0];

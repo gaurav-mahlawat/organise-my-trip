@@ -1,11 +1,12 @@
 import React from 'react';
 import { useRouter } from '../context/RouterContext';
-import { TAXI_ROUTES } from '../data/taxiData';
+import { useData } from '../context/DataContext';
 import { EnquiryForm } from '../components/common/EnquiryForm';
 import { MapPin, Clock, ShieldCheck, Car, Check, MessageCircle, ArrowLeft } from 'lucide-react';
 
 export const TaxiRouteDetailPage: React.FC = () => {
   const { params, navigate, openEnquiryModal, getWhatsAppLink } = useRouter();
+  const { taxiRoutes: TAXI_ROUTES } = useData();
   const routeSlug = params.routeSlug || 'jaipur-to-jodhpur';
 
   const route = TAXI_ROUTES.find(r => r.slug === routeSlug) || TAXI_ROUTES[0];

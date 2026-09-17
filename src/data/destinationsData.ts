@@ -261,15 +261,15 @@ export const DESTINATIONS: Destination[] = [
     ]
   },
   {
-    id: 'dest-ajmer-pushkar',
+    id: 'dest-ajmer',
     slug: 'ajmer',
-    name: 'Ajmer & Pushkar',
-    nickname: 'Sacred Heart of Rajasthan',
+    name: 'Ajmer',
+    nickname: 'The Sufi Pilgrimage City',
     image: 'images/destinations/ajmer-pushkar.webp',
-    description: 'Spiritual oasis separated by the Nag Pahar hills. Home to the revered Sufi shrine of Khwaja Moinuddin Chishti and the holy pilgrimage lake and Brahma Temple of Pushkar.',
-    bestTimeToVisit: 'October to March (Special for Pushkar Mela in Nov)',
-    popularFor: ['Ajmer Sharif Dargah', 'Lord Brahma Temple', 'Pushkar Holy Lake Ghats', 'Pushkar Camel Fair'],
-    tourCount: 9,
+    description: 'Historic city on the banks of Ana Sagar Lake, crowned by the revered Sufi shrine of Khwaja Moinuddin Chishti that draws pilgrims of all faiths from across South Asia.',
+    bestTimeToVisit: 'October to March',
+    popularFor: ['Ajmer Sharif Dargah', 'Ana Sagar Lake', 'Adhai Din Ka Jhonpra', 'Taragarh Fort Views'],
+    tourCount: 7,
     topAttractions: [
       {
         slug: 'ajmer-sharif-dargah',
@@ -280,6 +280,46 @@ export const DESTINATIONS: Destination[] = [
         timing: '5:00 AM - 10:00 PM',
         entryFee: 'Free'
       },
+      {
+        slug: 'ana-sagar-lake',
+        name: 'Ana Sagar Lake & Daulat Bagh Gardens',
+        type: 'Lake',
+        image: 'images/blog/rajasthan-tourism.webp',
+        shortDescription: 'Picturesque 12th-century artificial lake with marble baradari pavilions and gardens laid by Shah Jahan, perfect for sunset strolls.',
+        timing: '8:00 AM - 8:00 PM',
+        entryFee: 'Free (Boating extra)'
+      },
+      {
+        slug: 'adhai-din-ka-jhonpra',
+        name: 'Adhai Din Ka Jhonpra',
+        type: 'Heritage Site',
+        image: 'images/blog/best-time-rajasthan.webp',
+        shortDescription: 'Remarkable Indo-Islamic structure built from demolished temples, famed for its ornate calligraphic arches and lattice work.',
+        timing: 'Sunrise to Sunset',
+        entryFee: 'Free'
+      },
+      {
+        slug: 'akbari-fort-museum',
+        name: 'Akbari Fort & Museum (Ajmer Museum)',
+        type: 'Fort',
+        image: 'images/blog/festivals-rajasthan.webp',
+        shortDescription: 'Mughal-era fort built by Emperor Akbar in 1570 AD, now housing the government museum with Rajput and Mughal sculptures.',
+        timing: '10:00 AM - 4:45 PM (Closed Monday)',
+        entryFee: 'INR 20 (Indians), INR 100 (Foreigners)'
+      }
+    ]
+  },
+  {
+    id: 'dest-pushkar',
+    slug: 'pushkar',
+    name: 'Pushkar',
+    nickname: 'The Holy Lake Town',
+    image: 'images/blog/festivals-rajasthan.webp',
+    description: 'Sacred pilgrimage town wrapped around a mythical holy lake, home to the world’s most prominent Brahma Temple and the world-famous Pushkar Camel Fair.',
+    bestTimeToVisit: 'October to March (Pushkar Mela in November)',
+    popularFor: ['Lord Brahma Temple', 'Pushkar Holy Lake Ghats', 'Pushkar Camel Fair', 'Ropeway Sunset Views'],
+    tourCount: 9,
+    topAttractions: [
       {
         slug: 'brahma-temple-pushkar',
         name: 'Jagatpita Brahma Temple Pushkar',
@@ -293,7 +333,7 @@ export const DESTINATIONS: Destination[] = [
         slug: 'pushkar-lake',
         name: 'Pushkar Sarovar (Holy Lake & 52 Ghats)',
         type: 'Lake',
-        image: 'images/blog/best-time-rajasthan.webp',
+        image: 'images/destinations/ajmer-pushkar.webp',
         shortDescription: 'Legendary lake believed to have appeared where Lord Brahma dropped a lotus petal; surrounded by 52 bathing ghats with evening aarti.',
         timing: 'Open all day, Evening Aarti around 6:30 PM',
         entryFee: 'Free'
@@ -306,6 +346,15 @@ export const DESTINATIONS: Destination[] = [
         shortDescription: 'Perched on the highest hill above Pushkar lake, accessible by ropeway or 1,000 steps, providing unforgettable sunrise views.',
         timing: '5:00 AM - 8:00 PM',
         entryFee: 'Free (Ropeway INR 150)'
+      },
+      {
+        slug: 'pushkar-camel-fair',
+        name: 'Pushkar Camel Fair Grounds (Mela)',
+        type: 'Festival',
+        image: 'images/blog/camel-safari.webp',
+        shortDescription: 'Every November this quiet town erupts into the world’s largest camel fair — races, folk performances, moustache competitions and 50,000 camels.',
+        timing: 'November (Kartik Purnima week)',
+        entryFee: 'Free (Event charges apply)'
       }
     ]
   },

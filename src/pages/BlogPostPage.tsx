@@ -1,11 +1,12 @@
 import React from 'react';
 import { useRouter } from '../context/RouterContext';
-import { BLOG_POSTS } from '../data/blogData';
+import { useData } from '../context/DataContext';
 import { EnquiryForm } from '../components/common/EnquiryForm';
 import { Clock, Calendar, User, Tag, Share2, ArrowLeft, MessageCircle } from 'lucide-react';
 
 export const BlogPostPage: React.FC = () => {
   const { params, navigate, getWhatsAppLink } = useRouter();
+  const { blogPosts: BLOG_POSTS } = useData();
   const slug = params.slug || 'best-time-to-visit-rajasthan-month-by-month-guide';
 
   const post = BLOG_POSTS.find(p => p.slug === slug) || BLOG_POSTS[0];

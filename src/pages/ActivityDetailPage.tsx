@@ -1,11 +1,12 @@
 import React from 'react';
 import { useRouter } from '../context/RouterContext';
-import { ACTIVITIES } from '../data/activitiesData';
+import { useData } from '../context/DataContext';
 import { EnquiryForm } from '../components/common/EnquiryForm';
 import { MapPin, Clock, Check, Users, ShieldCheck, Sparkles, MessageCircle, ArrowLeft } from 'lucide-react';
 
 export const ActivityDetailPage: React.FC = () => {
   const { params, navigate, openEnquiryModal, getWhatsAppLink } = useRouter();
+  const { activities: ACTIVITIES } = useData();
   const slug = params.slug || 'sam-desert-camel-sunset-safari';
 
   const act = ACTIVITIES.find(a => a.slug === slug) || ACTIVITIES[0];

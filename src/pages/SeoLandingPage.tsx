@@ -1,12 +1,12 @@
 import React from 'react';
 import { useRouter } from '../context/RouterContext';
-import { SEO_LANDINGS } from '../data/seoLandingsData';
-import { TOUR_PACKAGES } from '../data/packagesData';
+import { useData } from '../context/DataContext';
 import { EnquiryForm } from '../components/common/EnquiryForm';
 import { ShieldCheck, Sparkles, Check, ChevronRight, MessageCircle, MapPin, Calendar, HelpCircle } from 'lucide-react';
 
 export const SeoLandingPage: React.FC = () => {
   const { params, navigate, openEnquiryModal, getWhatsAppLink } = useRouter();
+  const { seoLandings: SEO_LANDINGS, tourPackages: TOUR_PACKAGES } = useData();
   const slug = params.slug || '7-days-rajasthan-tour-packages';
 
   const landing = SEO_LANDINGS.find(s => s.slug === slug) || SEO_LANDINGS[0];

@@ -1,10 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import { useRouter } from '../context/RouterContext';
-import { ACTIVITIES } from '../data/activitiesData';
+import { useData } from '../context/DataContext';
 import { MapPin, Clock, Check, Sparkles, Search } from 'lucide-react';
 
 export const ActivitiesPage: React.FC = () => {
   const { navigate, openEnquiryModal } = useRouter();
+  const { activities: ACTIVITIES } = useData();
 
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');

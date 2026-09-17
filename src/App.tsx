@@ -1,5 +1,6 @@
 import React from 'react';
 import { RouterProvider, useRouter } from './context/RouterContext';
+import { DataProvider } from './context/DataContext';
 import { Layout } from './components/common/Layout';
 
 // Page Templates
@@ -110,7 +111,9 @@ const AppContent: React.FC = () => {
 export default function App() {
   return (
     <RouterProvider>
-      <AppContent />
+      <DataProvider>
+        <AppContent />
+      </DataProvider>
     </RouterProvider>
   );
 }

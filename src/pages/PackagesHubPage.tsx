@@ -1,10 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import { useRouter } from '../context/RouterContext';
-import { TOUR_PACKAGES } from '../data/packagesData';
+import { useData } from '../context/DataContext';
 import { MapPin, Check, Search, SlidersHorizontal, ArrowUpDown, Calendar, Sparkles } from 'lucide-react';
 
 export const PackagesHubPage: React.FC = () => {
   const { navigate, openEnquiryModal } = useRouter();
+  const { tourPackages: TOUR_PACKAGES } = useData();
 
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [durationFilter, setDurationFilter] = useState<string>('all');

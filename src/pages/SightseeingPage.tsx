@@ -1,16 +1,18 @@
 import React from 'react';
 import { useRouter } from '../context/RouterContext';
-import { DESTINATIONS } from '../data/destinationsData';
+import { useData } from '../context/DataContext';
 import { EnquiryForm } from '../components/common/EnquiryForm';
 import { MapPin, Clock, Ticket, Camera, ShieldCheck, ArrowLeft, MessageCircle } from 'lucide-react';
 
 export const SightseeingPage: React.FC = () => {
   const { params, navigate, getWhatsAppLink } = useRouter();
+  const { destinations: DESTINATIONS } = useData();
   const destSlug = params.destSlug || 'jaipur';
   const slug = params.slug || 'amer-fort';
 
   const dest = DESTINATIONS.find(d => d.slug === destSlug) || DESTINATIONS[0];
-  const attraction = dest.attractions.find(a => a.slug === slug) || dest.attractions[0];
+  const attractions = dest.attractions || dest.topAttractions;
+  const attraction = attractions.find(a => a.slug === slug) || attractions[0];
 
   return (
     <div className="w-full bg-stone-50 pb-20">
@@ -88,7 +90,7 @@ export const SightseeingPage: React.FC = () => {
           <h2 className="text-xl font-bold font-serif text-slate-900">
             About {attraction.name}
           </h2>
-          <p>{attraction.description}</p>
+          <p>{attraction.shortDescription || attraction.description}</p>
           <p>
             When exploring {attraction.name}, booking a private air-conditioned vehicle ensures you can bypass steep walking queues, store shopping bags comfortably, and combine this visit smoothly with other royal sights in {dest.name}.
           </p>

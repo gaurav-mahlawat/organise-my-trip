@@ -1,13 +1,16 @@
 import React from 'react';
 import { useRouter } from '../context/RouterContext';
-import { TOUR_PACKAGES } from '../data/packagesData';
-import { DESTINATIONS } from '../data/destinationsData';
-import { TAXI_ROUTES } from '../data/taxiData';
-import { BLOG_POSTS } from '../data/blogData';
-import { SEO_LANDINGS } from '../data/seoLandingsData';
+import { useData } from '../context/DataContext';
 
 export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 'sitemap' }> = ({ type }) => {
   const { navigate } = useRouter();
+  const {
+    tourPackages: TOUR_PACKAGES,
+    destinations: DESTINATIONS,
+    taxiRoutes: TAXI_ROUTES,
+    blogPosts: BLOG_POSTS,
+    seoLandings: SEO_LANDINGS
+  } = useData();
 
   if (type === 'sitemap') {
     return (

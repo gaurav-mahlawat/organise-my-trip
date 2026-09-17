@@ -1,10 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import { useRouter } from '../context/RouterContext';
-import { BLOG_POSTS } from '../data/blogData';
+import { useData } from '../context/DataContext';
 import { Search, BookOpen, Clock, Calendar, ArrowRight, Sparkles } from 'lucide-react';
 
 export const BlogIndexPage: React.FC = () => {
   const { navigate } = useRouter();
+  const { blogPosts: BLOG_POSTS } = useData();
   const [selectedTag, setSelectedTag] = useState<string>('All');
   const [search, setSearch] = useState<string>('');
 
