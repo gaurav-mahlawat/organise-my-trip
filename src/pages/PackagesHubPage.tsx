@@ -271,7 +271,7 @@ export const PackagesHubPage: React.FC = () => {
             Rates, hotel availability, safari permits and sightseeing access are date-dependent. Final quotations should be prepared after confirming travel dates, pax, rooming and hotel category.
           </p>
           <p className="text-xs text-amber-900 leading-relaxed">
-            Call / WhatsApp: <strong>8306906623</strong> · Email: <strong>himanshu@infinityhospitality.co.in</strong>
+            Call / WhatsApp: <strong>+91 77289 90407 / +91 89055 23568</strong> · Email: <strong>organisemytripdsr@gmail.com</strong>
           </p>
         </div>
 

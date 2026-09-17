@@ -1023,11 +1023,11 @@ export const HomePage: React.FC = () => {
               Get My Free Custom Quotation
             </button>
             <a
-              href="tel:+918306906623"
+              href="tel:+917728990407"
               className="px-6 py-3.5 rounded-xl bg-white hover:bg-stone-50 border border-stone-300 text-slate-800 font-semibold text-sm flex items-center gap-2"
             >
               <Phone className="w-4 h-4 text-amber-700" />
-              <span>Call / WhatsApp 8306906623</span>
+              <span>Call / WhatsApp +91 77289 90407</span>
             </a>
           </div>
         </div>

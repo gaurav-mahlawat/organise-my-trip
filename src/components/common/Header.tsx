@@ -48,12 +48,21 @@ export const Header: React.FC = () => {
           {/* Contact Direct Links */}
           <div className="flex items-center gap-4 text-[11px] font-medium ml-auto">
             <a 
-              href="tel:+918306906623" 
+              href="tel:+917728990407" 
               className="flex items-center gap-1.5 hover:text-amber-400 transition-colors"
               title="Call Rajasthan Trip Expert"
             >
               <Phone className="w-3.5 h-3.5 text-amber-400" />
-              <span>8306906623</span>
+              <span>+91 77289 90407</span>
+            </a>
+            <span className="hidden sm:inline text-slate-500">·</span>
+            <a 
+              href="tel:+918905523568" 
+              className="hidden sm:flex items-center gap-1.5 hover:text-amber-400 transition-colors"
+              title="Call Rajasthan Trip Expert"
+            >
+              <Phone className="w-3.5 h-3.5 text-amber-400" />
+              <span>+91 89055 23568</span>
             </a>
             <a 
               href={getWhatsAppLink()} 
@@ -65,11 +74,11 @@ export const Header: React.FC = () => {
               <span>WhatsApp Us</span>
             </a>
             <a 
-              href="mailto:himanshu@infinityhospitality.co.in" 
+              href="mailto:organisemytripdsr@gmail.com" 
               className="hidden sm:flex items-center gap-1.5 hover:text-amber-400 transition-colors"
             >
               <Mail className="w-3.5 h-3.5 text-amber-400" />
-              <span>himanshu@infinityhospitality.co.in</span>
+              <span>organisemytripdsr@gmail.com</span>
             </a>
           </div>
         </div>
