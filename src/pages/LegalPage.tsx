@@ -13,11 +13,18 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
     return (
       <div className="w-full bg-stone-50 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+          <div className="bg-gradient-to-r from-slate-900 via-amber-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
+            <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url('images/hero/rajasthan-banner-wide.webp')` }} />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-amber-950/75 to-slate-900/90" />
+            <div className="relative z-10 max-w-3xl space-y-3">
+              <h1 className="text-2xl sm:text-4xl font-bold font-serif">HTML Sitemap Directory</h1>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Browse the complete network of all pages and tour packages offered by Infinity Hospitality.
+              </p>
+            </div>
+          </div>
+
           <div className="bg-white p-8 rounded-3xl border border-stone-200 shadow-xs space-y-4">
-            <h1 className="text-3xl font-serif font-bold text-slate-900">HTML Sitemap Directory</h1>
-            <p className="text-xs text-slate-500">
-              Browse the complete network of all pages and tour packages offered by Infinity Hospitality.
-            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-6 border-t border-stone-100">
               {/* Main Hubs */}
@@ -145,15 +152,24 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
 
   const doc = contentMap[type];
 
+  const bannerImage = 
+    type === 'privacy' ? 'images/packages/classic-rajasthan.webp' :
+    type === 'terms' ? 'images/packages/jodhpur-blue-city.jpg' :
+    'images/packages/udaipur-city-palace.jpg';
+
   return (
     <div className="w-full bg-stone-50 py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-6">
-        <div className="bg-white p-8 sm:p-12 rounded-3xl border border-stone-200 shadow-xs space-y-6">
-          <div className="border-b border-stone-200 pb-4 space-y-1">
-            <h1 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900">{doc.title}</h1>
-            <p className="text-xs text-slate-500">{doc.subtitle}</p>
+        <div className="bg-gradient-to-r from-slate-900 via-amber-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
+          <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url('${bannerImage}')` }} />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-amber-950/75 to-slate-900/90" />
+          <div className="relative z-10 space-y-2">
+            <h1 className="text-2xl sm:text-3xl font-serif font-bold text-white">{doc.title}</h1>
+            <p className="text-xs text-slate-300">{doc.subtitle}</p>
           </div>
+        </div>
 
+        <div className="bg-white p-8 sm:p-12 rounded-3xl border border-stone-200 shadow-xs space-y-6">
           <div className="space-y-6 text-xs sm:text-sm text-slate-700 leading-relaxed">
             {doc.sections.map((sec, i) => (
               <div key={i} className="space-y-2">

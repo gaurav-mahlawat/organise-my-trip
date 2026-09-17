@@ -206,7 +206,7 @@ export const RouterProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   };
 
   const getWhatsAppLink = (customMessage?: string) => {
-    const baseNumber = '917728990407'; // Infinity Hospitality - Rajasthan Experiences
+    const baseNumber = '918905523568'; // Infinity Hospitality - Rajasthan Experiences
     const pageUrl = window.location.href;
     const msg = customMessage || `Hello Infinity Hospitality, I am inquiring from your website (${pageUrl}). Please share details and best quotation for Rajasthan trip.`;
     return `https://api.whatsapp.com/send?phone=${baseNumber}&text=${encodeURIComponent(msg)}`;

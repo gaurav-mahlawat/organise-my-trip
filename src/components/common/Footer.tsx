@@ -45,7 +45,7 @@ export const Footer: React.FC = () => {
               <MessageCircle className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-white font-semibold text-sm">Call / WhatsApp: +91 77289 90407</h4>
+              <h4 className="text-white font-semibold text-sm">Call / WhatsApp: +91 89055 23568</h4>
               <p className="text-xs text-slate-400 mt-0.5">Get answers, itinerary suggestions, and direct quotes within minutes.</p>
             </div>
           </div>
@@ -85,11 +85,11 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-2 text-slate-300 pt-1">
                 <Phone className="w-4 h-4 text-amber-400 shrink-0" />
-                <a href="tel:+917728990407" className="hover:text-amber-400">Call / WhatsApp: +91 77289 90407</a>
+                <a href="tel:+917728990407" className="hover:text-amber-400">Call: +91 77289 90407</a>
               </div>
               <div className="flex items-center gap-2 text-slate-300">
                 <Phone className="w-4 h-4 text-amber-400 shrink-0" />
-                <a href="tel:+918905523568" className="hover:text-amber-400">Call: +91 89055 23568</a>
+                <a href="tel:+918905523568" className="hover:text-amber-400">Call / WhatsApp: +91 89055 23568</a>
               </div>
               <div className="flex items-center gap-2 text-slate-300">
                 <Mail className="w-4 h-4 text-amber-400 shrink-0" />

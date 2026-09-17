@@ -41,11 +41,11 @@ export const ContactUsPage: React.FC = () => {
               <div className="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-stone-100">
                 <div className="flex items-center gap-2">
                   <Phone className="w-3.5 h-3.5 text-amber-700" />
-                  <span>Call / WhatsApp: +91 77289 90407</span>
+                  <span>Call: +91 77289 90407</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="w-3.5 h-3.5 text-amber-700" />
-                  <span>Call: +91 89055 23568</span>
+                  <span>Call / WhatsApp: +91 89055 23568</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-3.5 h-3.5 text-amber-700" />

@@ -805,39 +805,53 @@ export const HomePage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
+                image: 'images/packages/jaisalmer-golden-fort.jpg',
                 quote: 'Infinity Hospitality organized our 8-day family trip across Jaipur, Ranthambhore and Jodhpur. Our chauffeur was exceptionally polite, punctual, and safe. The desert camp in Jaisalmer was magical!',
                 author: 'Dr. Alok & Priya Sen',
                 origin: 'Mumbai, India',
                 trip: 'Royal Triangle & Wildlife'
               },
               {
+                image: 'images/packages/udaipur-city-palace.jpg',
                 quote: 'Coming from London for our 25th anniversary, we wanted authentic luxury without hassle. Infinity Hospitality booked wonderful boutique havelis and the private Lake Pichola boat ride at sunset was unforgettable.',
                 author: 'Richard & Catherine Davies',
                 origin: 'London, United Kingdom',
                 trip: 'Palaces, Lakes & Desert'
               },
               {
+                image: 'images/packages/ranthambore-safari-960.webp',
                 quote: 'Booked an Innova Crysta for our corporate client from Delhi Airport to Jaipur and Ranthambhore. Top-notch sanitized vehicle, clear billing, and responsive WhatsApp coordinator.',
                 author: 'Sunil Aggarwal (Apex Holidays)',
                 origin: 'New Delhi, India',
                 trip: 'Corporate Group & Safari Transfer'
               }
             ].map((rev, i) => (
-              <div key={i} className="bg-stone-50 p-6 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-4">
-                <div className="space-y-3">
-                  <div className="flex text-amber-500 gap-0.5">
-                    {[...Array(5)].map((_, idx) => (
-                      <Star key={idx} className="w-4 h-4 fill-amber-500" />
-                    ))}
-                  </div>
-                  <p className="text-xs text-slate-700 leading-relaxed italic">
-                    "{rev.quote}"
-                  </p>
+              <div key={i} className="bg-stone-50 rounded-2xl border border-stone-200 overflow-hidden flex flex-col">
+                <div className="aspect-16/9 w-full overflow-hidden">
+                  <img
+                    src={rev.image}
+                    alt={rev.trip}
+                    className="w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
+                    loading="lazy"
+                  />
                 </div>
+                <div className="p-6 flex flex-col grow justify-between space-y-4">
+                  <div className="space-y-3">
+                    <div className="flex text-amber-500 gap-0.5">
+                      {[...Array(5)].map((_, idx) => (
+                        <Star key={idx} className="w-4 h-4 fill-amber-500" />
+                      ))}
+                    </div>
+                    <p className="text-xs text-slate-700 leading-relaxed italic">
+                      "{rev.quote}"
+                    </p>
+                  </div>
 
-                <div className="pt-3 border-t border-stone-200 text-xs">
-                  <strong className="text-slate-900 block font-semibold">{rev.author}</strong>
-                  <span className="text-slate-500 text-[11px] block">{rev.origin} · <span className="text-amber-800 font-medium">{rev.trip}</span></span>
+                  <div className="pt-3 border-t border-stone-200 text-xs">
+                    <strong className="text-slate-900 block font-semibold">{rev.author}</strong>
+                    <span className="text-slate-500 text-[11px] block">{rev.origin} · <span className="text-amber-800 font-medium">{rev.trip}</span></span>
+                  </div>
                 </div>
               </div>
             ))}
@@ -1023,11 +1037,11 @@ export const HomePage: React.FC = () => {
               Get My Free Custom Quotation
             </button>
             <a
-              href="tel:+917728990407"
+              href="tel:+918905523568"
               className="px-6 py-3.5 rounded-xl bg-white hover:bg-stone-50 border border-stone-300 text-slate-800 font-semibold text-sm flex items-center gap-2"
             >
               <Phone className="w-4 h-4 text-amber-700" />
-              <span>Call / WhatsApp +91 77289 90407</span>
+              <span>Call / WhatsApp +91 89055 23568</span>
             </a>
           </div>
         </div>

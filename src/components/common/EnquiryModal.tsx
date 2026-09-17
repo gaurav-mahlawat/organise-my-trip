@@ -15,21 +15,23 @@ export const EnquiryModal: React.FC = () => {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
-        <div className="bg-gradient-to-r from-slate-900 via-amber-950 to-slate-900 text-white p-6 relative">
+        <div className="bg-gradient-to-r from-slate-900 via-amber-950 to-slate-900 text-white p-6 relative overflow-hidden">
+          <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url('images/hero/rajasthan-banner-wide.webp')` }} />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-amber-950/80 to-slate-900/90" />
           <button
             onClick={closeEnquiryModal}
-            className="absolute top-4 right-4 p-2 text-slate-300 hover:text-white rounded-full hover:bg-white/10 transition-colors"
+            className="absolute top-4 right-4 p-2 text-slate-300 hover:text-white rounded-full hover:bg-white/10 transition-colors z-10"
             aria-label="Close Modal"
           >
             <X className="w-5 h-5" />
           </button>
 
-          <div className="flex items-center gap-2 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-1">
+          <div className="relative z-10 flex items-center gap-2 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-1">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Infinity Hospitality · Rajasthan Experiences</span>
           </div>
 
-          <h2 className="text-xl sm:text-2xl font-bold font-serif">
+          <h2 className="relative z-10 text-xl sm:text-2xl font-bold font-serif">
             {modalInitialData?.type === 'taxi'
               ? 'Book Private Intercity Taxi'
               : modalInitialData?.type === 'b2b'
@@ -37,7 +39,7 @@ export const EnquiryModal: React.FC = () => {
               : 'Plan Your Custom Rajasthan Journey'}
           </h2>
 
-          <p className="text-xs text-slate-300 mt-1 flex items-center gap-1.5">
+          <p className="relative z-10 text-xs text-slate-300 mt-1 flex items-center gap-1.5">
             <ShieldCheck className="w-4 h-4 text-amber-400" />
             <span>Transparent pricing · Guaranteed private vehicle · No middlemen markup</span>
           </p>
