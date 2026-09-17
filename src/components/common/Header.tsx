@@ -37,23 +37,23 @@ export const Header: React.FC = () => {
           <div className="flex items-center gap-3">
             <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 font-medium text-[11px]">
               <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
-              Local Rajasthan travel company · Since 2011
+              Infinity Hospitality · Rajasthan Experiences
             </span>
             <span className="hidden md:inline text-slate-400">|</span>
             <span className="hidden md:inline text-slate-300 text-[11px]">
-              Jaipur & Udaipur Local Offices · 100% Tailor-made Private Tours
+              Jaipur · Rajasthan · India · 100% Private Customisable Circuits
             </span>
           </div>
 
           {/* Contact Direct Links */}
           <div className="flex items-center gap-4 text-[11px] font-medium ml-auto">
             <a 
-              href="tel:+919829012345" 
+              href="tel:+918306906623" 
               className="flex items-center gap-1.5 hover:text-amber-400 transition-colors"
               title="Call Rajasthan Trip Expert"
             >
               <Phone className="w-3.5 h-3.5 text-amber-400" />
-              <span>+91 98290 12345</span>
+              <span>8306906623</span>
             </a>
             <a 
               href={getWhatsAppLink()} 
@@ -65,11 +65,11 @@ export const Header: React.FC = () => {
               <span>WhatsApp Us</span>
             </a>
             <a 
-              href="mailto:info@organisemytrip.com" 
+              href="mailto:himanshu@infinityhospitality.co.in" 
               className="hidden sm:flex items-center gap-1.5 hover:text-amber-400 transition-colors"
             >
               <Mail className="w-3.5 h-3.5 text-amber-400" />
-              <span>info@organisemytrip.com</span>
+              <span>himanshu@infinityhospitality.co.in</span>
             </a>
           </div>
         </div>
@@ -82,11 +82,11 @@ export const Header: React.FC = () => {
           <div 
             onClick={() => navigate('/')} 
             className="flex items-center gap-2.5 cursor-pointer group select-none shrink min-w-0"
-            title="Organise My Trip - Home"
+            title="Infinity Hospitality - Home"
           >
             <img 
               src="images/logo.jpeg" 
-              alt="Organise My Trip - Local Rajasthan travel company since 2011" 
+              alt="Infinity Hospitality - Rajasthan Experiences" 
               className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02] shrink-0"
               referrerPolicy="no-referrer"
               onError={(e) => {
@@ -97,10 +97,10 @@ export const Header: React.FC = () => {
             />
             <div className="flex flex-col leading-tight min-w-0">
               <span className="font-serif text-[15px] sm:text-base font-bold tracking-tight text-slate-900 group-hover:text-amber-800 transition-colors truncate">
-                Organise My Trip
+                Infinity Hospitality
               </span>
               <span className="hidden sm:block text-[8px] tracking-wide text-amber-800 font-semibold uppercase truncate">
-                Rajasthan journeys since 2011
+                Rajasthan Experiences
               </span>
             </div>
           </div>
@@ -130,39 +130,39 @@ export const Header: React.FC = () => {
               {packagesDropdown && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 w-72 bg-white rounded-xl shadow-xl border border-slate-100 py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
                   <div className="px-3 py-1 text-[11px] font-bold tracking-wider text-slate-400 uppercase">
-                    Popular Itineraries (29 Tours)
+                    Popular Itineraries (8 Tours)
                   </div>
                   <button 
                     onClick={() => { navigate('/packages'); setPackagesDropdown(false); }}
                     className="w-full text-left px-4 py-2 text-xs font-semibold text-amber-800 hover:bg-amber-50 flex items-center justify-between"
                   >
-                    <span>Browse All 29 Packages</span>
-                    <span className="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold">2026 Fleet</span>
+                    <span>Browse All 8 Packages</span>
+                    <span className="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold">Promo Circuits</span>
                   </button>
                   <div className="h-px bg-slate-100 my-1" />
                   <button 
-                    onClick={() => { navigate('/package-detail/classic-rajasthan-7-days'); setPackagesDropdown(false); }}
+                    onClick={() => { navigate('/package-detail/royal-rajasthan-highlights'); setPackagesDropdown(false); }}
                     className="w-full text-left px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-amber-800"
                   >
-                    Classic Rajasthan (7 Days) · Jaipur, Jodhpur, Udaipur
+                    Royal Rajasthan Highlights (7 Days) · Jaipur, Pushkar, Jodhpur, Jaisalmer
                   </button>
                   <button 
-                    onClick={() => { navigate('/package-detail/royal-rajasthan-10-days'); setPackagesDropdown(false); }}
+                    onClick={() => { navigate('/package-detail/royal-triangle-wildlife'); setPackagesDropdown(false); }}
                     className="w-full text-left px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-amber-800"
                   >
-                    Royal Rajasthan Grand Odyssey (10 Days)
+                    Royal Triangle & Wildlife (8 Days)
                   </button>
                   <button 
-                    onClick={() => { navigate('/package-detail/golden-triangle-with-ranthambore-wildlife'); setPackagesDropdown(false); }}
+                    onClick={() => { navigate('/package-detail/grand-rajasthan-circuit'); setPackagesDropdown(false); }}
                     className="w-full text-left px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-amber-800"
                   >
-                    Golden Triangle & Ranthambore Tigers (8 Days)
+                    Grand Rajasthan Circuit (11 Days)
                   </button>
                   <button 
-                    onClick={() => { navigate('/package-detail/romantic-udaipur-mount-abu-honeymoon'); setPackagesDropdown(false); }}
+                    onClick={() => { navigate('/package-detail/palaces-lakes-desert'); setPackagesDropdown(false); }}
                     className="w-full text-left px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-amber-800"
                   >
-                    Romantic Udaipur & Mount Abu (5 Days)
+                    Palaces, Lakes & Desert (9 Days)
                   </button>
                   <div className="h-px bg-slate-100 my-1" />
                   <button 
@@ -339,7 +339,7 @@ export const Header: React.FC = () => {
                 isActive('/packages') ? 'bg-amber-50 text-amber-800' : 'text-slate-700 hover:bg-slate-50'
               }`}
             >
-              Tour Packages (29 Tours)
+              Tour Packages (8 Tours)
             </button>
             <button 
               onClick={() => { navigate('/taxi-service'); setIsMobileMenuOpen(false); }}
@@ -387,13 +387,13 @@ export const Header: React.FC = () => {
               onClick={() => { navigate('/about-us'); setIsMobileMenuOpen(false); }}
               className="text-left px-3 py-2.5 text-sm text-slate-600 hover:bg-slate-50"
             >
-              About Organise My Trip
+              About Infinity Hospitality
             </button>
             <button 
               onClick={() => { navigate('/contact-us'); setIsMobileMenuOpen(false); }}
               className="text-left px-3 py-2.5 text-sm text-slate-600 hover:bg-slate-50"
             >
-              Contact Us (Jaipur & Udaipur Offices)
+              Contact Us (Jaipur · Rajasthan · India)
             </button>
           </div>
 

@@ -108,7 +108,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Travel Tips',
     readTime: '4 min read',
     publishedDate: 'February 10, 2026',
-    author: 'Organise My Trip Fleet Team',
+    author: 'Infinity Hospitality Fleet Team',
     image: 'images/taxi/taxi-hero-960.webp',
     excerpt: 'How the Delhi-Mumbai Expressway has cut travel time between Delhi and Jaipur to just 3.5 hours. Toll costs, rest stops, speed limits, and cab advice.',
     content: [
@@ -260,7 +260,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Travel Tips',
     readTime: '7 min read',
     publishedDate: 'June 10, 2026',
-    author: 'Organise My Trip Advisory Desk',
+    author: 'Infinity Hospitality Advisory Desk',
     image: 'images/packages/luxury-palace.webp',
     excerpt: 'Transparent per-day expense breakdown for hotels, private taxi hire, meals, and monument tickets across Budget, Deluxe, and Royal Luxury tiers.',
     content: [

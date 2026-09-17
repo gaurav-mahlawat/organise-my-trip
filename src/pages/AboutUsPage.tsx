@@ -15,13 +15,13 @@ export const AboutUsPage: React.FC = () => {
           <div className="relative z-10 max-w-3xl space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Local Rajasthan travel company · Since 2011</span>
+              <span>Infinity Hospitality · Rajasthan Experiences</span>
             </div>
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-serif">
-              About Organise My Trip
+              About Infinity Hospitality
             </h1>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Founded in Jaipur in 2011, Organise My Trip was born from a simple belief: genuine travel in the Land of Kings should be intimate, respectful, and transparently priced.
+              Based in Jaipur, Rajasthan, India — Infinity Hospitality curates ready-to-sell Rajasthan circuits built on a simple belief: genuine travel in the Land of Kings should be intimate, flexible, and transparently priced.
             </p>
           </div>
         </div>
@@ -30,31 +30,31 @@ export const AboutUsPage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
             <h2 className="text-2xl font-bold font-serif text-slate-900">
-              15 Years of Crafting Private Rajasthan Memories
+              Travel with Infinity Hospitality
             </h2>
             <p>
-              Unlike generic online portals that broker tours to third-party sub-contractors, <strong>Organise My Trip</strong> is a direct local ground operator headquartered on MI Road, Jaipur, with a regional operational hub in Udaipur.
+              Our <strong>Rajasthan Curated Tour Collection</strong> features 8 promotional itineraries covering Heritage, Wildlife, Lakes, Desert and Luxury — from a 7-day Royal Rajasthan Highlights circuit to the 14-day Ultimate Rajasthan Experience.
             </p>
             <p>
-              When you travel with us, you are cared for by our own verified chauffeurs, assigned our hand-selected heritage havelis, and backed by round-the-clock on-ground emergency support. Over 18,500 happy travelers have journeyed across Rajasthan with us since 2011.
+              Every circuit can be customised by hotel category (3*/4*/5*), vehicle, meal plan (breakfast or MAP), safari availability and travel dates. When you travel with us, you are cared for by our own verified chauffeurs and hand-selected hotel partners across Jaipur, Pushkar, Ranthambhore, Udaipur, Jawai, Jodhpur, Jaisalmer and Bikaner.
             </p>
 
             <div className="pt-2 grid grid-cols-2 gap-4">
               <div className="p-4 rounded-xl bg-white border border-stone-200 shadow-xs">
-                <span className="text-2xl font-bold font-serif text-amber-800">18,500+</span>
-                <span className="text-[11px] text-slate-500 block">Happy Guests Guided</span>
+                <span className="text-2xl font-bold font-serif text-amber-800">8</span>
+                <span className="text-[11px] text-slate-500 block">Curated Promotional Circuits</span>
               </div>
               <div className="p-4 rounded-xl bg-white border border-stone-200 shadow-xs">
-                <span className="text-2xl font-bold font-serif text-amber-800">60+</span>
-                <span className="text-[11px] text-slate-500 block">Commercial Tourist Fleet</span>
+                <span className="text-2xl font-bold font-serif text-amber-800">8+</span>
+                <span className="text-[11px] text-slate-500 block">Cities Covered Across Rajasthan</span>
               </div>
               <div className="p-4 rounded-xl bg-white border border-stone-200 shadow-xs">
-                <span className="text-2xl font-bold font-serif text-amber-800">4.9 / 5</span>
-                <span className="text-[11px] text-slate-500 block">Google & TripAdvisor Rating</span>
+                <span className="text-2xl font-bold font-serif text-amber-800">100%</span>
+                <span className="text-[11px] text-slate-500 block">Private & Customisable Tours</span>
               </div>
               <div className="p-4 rounded-xl bg-white border border-stone-200 shadow-xs">
-                <span className="text-2xl font-bold font-serif text-amber-800">2011</span>
-                <span className="text-[11px] text-slate-500 block">Established in Jaipur</span>
+                <span className="text-2xl font-bold font-serif text-amber-800">24/7</span>
+                <span className="text-[11px] text-slate-500 block">On-Trip Local Support</span>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ export const AboutUsPage: React.FC = () => {
           <div className="aspect-4/3 rounded-3xl overflow-hidden shadow-lg border border-stone-200">
             <img
               src="images/packages/jaipur-amber-fort.jpg"
-              alt="Organise My Trip Rajasthan Team & Chauffeurs"
+              alt="Infinity Hospitality Rajasthan Experiences"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
@@ -86,9 +86,9 @@ export const AboutUsPage: React.FC = () => {
 
             <div className="space-y-2 p-4 rounded-xl bg-stone-50 border border-stone-100">
               <Award className="w-6 h-6 text-amber-700" />
-              <h4 className="font-bold text-sm text-slate-900">Verified Heritage Stays</h4>
+              <h4 className="font-bold text-sm text-slate-900">Verified Hotel Partners</h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                We inspect rooms, water pressure, and kitchen hygiene personally before recommending any heritage haveli or desert tent.
+                We inspect rooms, service standards, and kitchen hygiene personally before recommending any 3*/4*/5* hotel, heritage haveli or desert tent.
               </p>
             </div>
 

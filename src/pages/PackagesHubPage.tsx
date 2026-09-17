@@ -11,7 +11,7 @@ export const PackagesHubPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [sortBy, setSortBy] = useState<'recommended' | 'price-asc' | 'price-desc' | 'duration'>('recommended');
 
-  const categories = ['All', 'Golden Triangle', 'Heritage & Forts', 'Honeymoon & Romantic', 'Desert & Safari', 'Wildlife & Nature'];
+  const categories = ['All', 'Heritage & Forts', 'Wildlife & Safari', 'Desert & Safari', 'Luxury & Leisure', 'Family & Groups'];
 
   const filteredPackages = useMemo(() => {
     let list = [...TOUR_PACKAGES];
@@ -40,9 +40,9 @@ export const PackagesHubPage: React.FC = () => {
     }
 
     if (sortBy === 'price-asc') {
-      list.sort((a, b) => a.startingPrice - b.startingPrice);
+      list.sort((a, b) => (a.startingPrice ?? Infinity) - (b.startingPrice ?? Infinity));
     } else if (sortBy === 'price-desc') {
-      list.sort((a, b) => b.startingPrice - a.startingPrice);
+      list.sort((a, b) => (b.startingPrice ?? 0) - (a.startingPrice ?? 0));
     } else if (sortBy === 'duration') {
       list.sort((a, b) => a.durationDays - b.durationDays);
     }
@@ -60,13 +60,13 @@ export const PackagesHubPage: React.FC = () => {
           <div className="relative z-10 max-w-3xl space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>29 Private Handcrafted Tour Itineraries</span>
+              <span>8 Promotional Itineraries · Heritage · Wildlife · Lakes · Desert · Luxury</span>
             </div>
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-serif">
-              Rajasthan Tour Packages
+              Rajasthan Curated Tour Collection
             </h1>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Explore royal palaces, golden dunes, and tranquil lakes. Every tour is 100% private and customizable with your dedicated chauffeur, verified heritage hotels, and direct local support.
+              Designed for promotional use, these ready-to-sell Rajasthan circuits can be customised by hotel category, vehicle, meal plan, safari availability and travel dates.
             </p>
           </div>
         </div>
@@ -159,8 +159,8 @@ export const PackagesHubPage: React.FC = () => {
 
         {/* Results Count */}
         <div className="flex justify-between items-center text-xs text-slate-500 px-1">
-          <span>Showing <strong>{filteredPackages.length}</strong> verified tour packages</span>
-          <span>Prices per person on twin-sharing basis</span>
+          <span>Showing <strong>{filteredPackages.length}</strong> curated promotional itineraries</span>
+          <span>Final quotations on request · Date-dependent rates</span>
         </div>
 
         {/* Packages Cards Grid */}
@@ -235,8 +235,12 @@ export const PackagesHubPage: React.FC = () => {
                   <div>
                     <span className="text-[10px] text-slate-400 uppercase font-semibold block">Starting from</span>
                     <div className="flex items-baseline gap-1">
-                      <span className="text-lg font-bold text-slate-900">₹{pkg.startingPrice.toLocaleString('en-IN')}</span>
-                      <span className="text-[10px] text-slate-500">/ person</span>
+                      {pkg.startingPrice ? (
+                        <span className="text-lg font-bold text-slate-900">₹{pkg.startingPrice.toLocaleString('en-IN')}</span>
+                      ) : (
+                        <span className="text-sm font-bold text-amber-700">Price on Request</span>
+                      )}
+                      {pkg.startingPrice && <span className="text-[10px] text-slate-500">/ person</span>}
                     </div>
                   </div>
 
@@ -258,6 +262,17 @@ export const PackagesHubPage: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Important: date-dependent rates note */}
+        <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 space-y-2">
+          <h3 className="text-sm font-bold text-amber-900 uppercase tracking-wider">Important</h3>
+          <p className="text-xs text-amber-900 leading-relaxed">
+            Rates, hotel availability, safari permits and sightseeing access are date-dependent. Final quotations should be prepared after confirming travel dates, pax, rooming and hotel category.
+          </p>
+          <p className="text-xs text-amber-900 leading-relaxed">
+            Call / WhatsApp: <strong>8306906623</strong> · Email: <strong>himanshu@infinityhospitality.co.in</strong>
+          </p>
         </div>
 
         {/* Empty state if search finds nothing */}

@@ -15,8 +15,8 @@ export const Footer: React.FC = () => {
               <Award className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-white font-semibold text-sm">Since 2011</h4>
-              <p className="text-xs text-slate-400 mt-0.5">15+ years of verified Rajasthan inbound and domestic hospitality.</p>
+              <h4 className="text-white font-semibold text-sm">Curated Promotional Circuits</h4>
+              <p className="text-xs text-slate-400 mt-0.5">8 ready-to-sell Rajasthan itineraries · Heritage, Wildlife, Lakes, Desert & Luxury.</p>
             </div>
           </div>
 
@@ -35,8 +35,8 @@ export const Footer: React.FC = () => {
               <Clock className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-white font-semibold text-sm">24/7 Local Concierge</h4>
-              <p className="text-xs text-slate-400 mt-0.5">Physical offices in Jaipur & Udaipur with on-ground manager support.</p>
+              <h4 className="text-white font-semibold text-sm">Fully Customisable</h4>
+              <p className="text-xs text-slate-400 mt-0.5">Hotel category, vehicle, meal plan, safari availability and travel dates — your way.</p>
             </div>
           </div>
 
@@ -45,7 +45,7 @@ export const Footer: React.FC = () => {
               <MessageCircle className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-white font-semibold text-sm">Instant WhatsApp Assistance</h4>
+              <h4 className="text-white font-semibold text-sm">Call / WhatsApp: 8306906623</h4>
               <p className="text-xs text-slate-400 mt-0.5">Get answers, itinerary suggestions, and direct quotes within minutes.</p>
             </div>
           </div>
@@ -58,45 +58,38 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-3">
               <img 
                 src="images/logo.jpeg" 
-                alt="Organise My Trip - Local Rajasthan travel company since 2011"
+                alt="Infinity Hospitality - Rajasthan Experiences"
                 className="h-14 w-auto object-contain bg-white rounded-md p-1"
                 referrerPolicy="no-referrer"
               />
               <div>
                 <span className="font-serif text-lg font-bold text-white block">
-                  Organise My Trip
+                  Infinity Hospitality
                 </span>
                 <span className="text-[10px] tracking-wider text-amber-400 uppercase font-semibold block">
-                  Rajasthan journeys since 2011
+                  Rajasthan Experiences
                 </span>
               </div>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Local Rajasthan travel company & authorized destination management agency based in Jaipur and Udaipur. We craft private heritage tours, desert safaris, verified taxi transfers, and luxury palace vacations.
+              Make your Rajasthan journey your way — private tours, family holidays, honeymoons, luxury escapes, corporate groups and destination weddings. Ready-to-sell circuits customisable by hotel category, vehicle, meal plan, safari availability and travel dates.
             </p>
 
             <div className="space-y-2 pt-2 text-xs">
               <div className="flex items-start gap-2 text-slate-300">
                 <MapPin className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                 <div>
-                  <strong className="text-white block">Jaipur Head Office:</strong>
-                  Plot 14, Near Ganpati Plaza, MI Road, Jaipur, Rajasthan 302001
-                </div>
-              </div>
-              <div className="flex items-start gap-2 text-slate-300">
-                <MapPin className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                <div>
-                  <strong className="text-white block">Udaipur Office:</strong>
-                  21, Lake Palace Road, Near Kalaji Goraji, Udaipur, Rajasthan 313001
+                  <strong className="text-white block">Infinity Hospitality:</strong>
+                  Jaipur · Rajasthan · India
                 </div>
               </div>
               <div className="flex items-center gap-2 text-slate-300 pt-1">
                 <Phone className="w-4 h-4 text-amber-400 shrink-0" />
-                <a href="tel:+919829012345" className="hover:text-amber-400">+91 98290 12345 / +91 94140 12345</a>
+                <a href="tel:+918306906623" className="hover:text-amber-400">Call / WhatsApp: 8306906623</a>
               </div>
               <div className="flex items-center gap-2 text-slate-300">
                 <Mail className="w-4 h-4 text-amber-400 shrink-0" />
-                <a href="mailto:info@organisemytrip.com" className="hover:text-amber-400">info@organisemytrip.com</a>
+                <a href="mailto:himanshu@infinityhospitality.co.in" className="hover:text-amber-400">himanshu@infinityhospitality.co.in</a>
               </div>
             </div>
           </div>
@@ -104,63 +97,63 @@ export const Footer: React.FC = () => {
           {/* Col 2: Popular Tour Packages */}
           <div className="space-y-3">
             <h3 className="text-sm font-bold tracking-wider text-white uppercase border-b border-slate-800 pb-2">
-              Tour Packages (29 Tours)
+              Tour Packages (8 Tours)
             </h3>
             <ul className="space-y-2 text-xs">
               <li>
                 <button 
-                  onClick={() => navigate('/package-detail/classic-rajasthan-7-days')} 
+                  onClick={() => navigate('/package-detail/royal-rajasthan-highlights')} 
                   className="hover:text-amber-400 transition-colors text-left"
                 >
-                  Classic Rajasthan Heritage (7 Days)
+                  Royal Rajasthan Highlights (7 Days)
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => navigate('/package-detail/royal-rajasthan-10-days')} 
+                  onClick={() => navigate('/package-detail/royal-triangle-wildlife')} 
                   className="hover:text-amber-400 transition-colors text-left"
                 >
-                  Royal Rajasthan Grand Odyssey (10 Days)
+                  Royal Triangle & Wildlife (8 Days)
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => navigate('/package-detail/golden-triangle-with-ranthambore-wildlife')} 
+                  onClick={() => navigate('/package-detail/grand-rajasthan-circuit')} 
                   className="hover:text-amber-400 transition-colors text-left"
                 >
-                  Golden Triangle & Ranthambore Tigers (8 Days)
+                  Grand Rajasthan Circuit (11 Days)
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => navigate('/package-detail/romantic-udaipur-mount-abu-honeymoon')} 
+                  onClick={() => navigate('/package-detail/palaces-lakes-desert')} 
                   className="hover:text-amber-400 transition-colors text-left"
                 >
-                  Romantic Udaipur & Mount Abu (5 Days)
+                  Palaces, Lakes & Desert (9 Days)
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => navigate('/package-detail/grand-rajasthan-14-days-expedition')} 
+                  onClick={() => navigate('/package-detail/luxury-rajasthan-escape')} 
                   className="hover:text-amber-400 transition-colors text-left"
                 >
-                  Grand Rajasthan Expedition (14 Days)
+                  Luxury Rajasthan Escape (12 Days)
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => navigate('/package-detail/desert-circuit-bikaner-jaisalmer-jodhpur')} 
+                  onClick={() => navigate('/package-detail/rajasthan-family-explorer')} 
                   className="hover:text-amber-400 transition-colors text-left"
                 >
-                  Thar Desert Circuit (6 Days)
+                  Rajasthan Family Explorer (10 Days)
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => navigate('/package-detail/luxury-rajasthan-palace-train-and-heritage-stays')} 
+                  onClick={() => navigate('/package-detail/ultimate-rajasthan-experience')} 
                   className="hover:text-amber-400 transition-colors text-left"
                 >
-                  Luxury 5-Star Palace Stays (8 Days)
+                  Ultimate Rajasthan Experience (14 Days)
                 </button>
               </li>
               <li className="pt-1">
@@ -168,7 +161,7 @@ export const Footer: React.FC = () => {
                   onClick={() => navigate('/packages')} 
                   className="text-amber-400 font-semibold hover:underline flex items-center gap-1"
                 >
-                  View all 29 tour packages →
+                  View all 8 tour packages →
                 </button>
               </li>
             </ul>
@@ -290,7 +283,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <button onClick={() => navigate('/about-us')} className="hover:text-amber-400 text-left">
-                  About Organise My Trip
+                  About Infinity Hospitality
                 </button>
               </li>
               <li>
@@ -305,20 +298,20 @@ export const Footer: React.FC = () => {
         {/* SEO Blurb as per requirements */}
         <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800/80 text-slate-400 text-xs leading-relaxed space-y-2.5">
           <p className="font-semibold text-slate-200">
-            About Organise My Trip - Local Rajasthan Travel Company · Since 2011
+            About Infinity Hospitality - Rajasthan Experiences · Jaipur, Rajasthan, India
           </p>
           <p>
-            Welcome to Organise My Trip, your trusted local Rajasthan destination specialist and premier tour operator. Since 2011, we have operated over 15,000 customized private journeys across Jaipur, Udaipur, Jodhpur, Jaisalmer, Bikaner, Pushkar, Mount Abu, and Ranthambore. Unlike generic aggregators, we maintain our own fleet of commercial tourist taxis (Sedan, Ertiga, Toyota Innova Crysta, and 12-17 Seater Tempo Travellers) driven by senior, verified chauffeurs.
+            Welcome to Infinity Hospitality, your local Rajasthan travel specialist. Our Rajasthan Curated Tour Collection features 8 promotional, ready-to-sell itineraries across Jaipur, Pushkar, Ranthambhore, Udaipur, Jawai, Jodhpur, Jaisalmer and Bikaner — covering Heritage, Wildlife, Lakes, Desert and Luxury.
           </p>
           <p>
-            Whether you are booking a 7-day classic holiday, an all-inclusive desert camping safari under the stars in Sam sand dunes, or an intercity taxi between Jaipur and Jodhpur, every itinerary is supported by our physical guest relation offices in Jaipur and Udaipur. Contact our trip design specialists today for a free custom quotation with transparent, fair pricing and zero hidden charges.
+            Every circuit can be customised by hotel category (3*/4*/5*), vehicle, meal plan (breakfast or MAP), safari availability and travel dates. Make your Rajasthan journey your way — private tours, family holidays, honeymoons, luxury escapes, corporate groups and destination weddings. Rates, hotel availability, safari permits and sightseeing access are date-dependent; final quotations are prepared after confirming travel dates, pax, rooming and hotel category.
           </p>
         </div>
 
         {/* Bottom Copyright & Legal Links */}
         <div className="pt-8 mt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
           <div>
-            © 2011 – 2026 Organise My Trip. All rights reserved. Tagline: Local Rajasthan travel company · Since 2011.
+            © 2026 Infinity Hospitality · Jaipur · Rajasthan · India. All rights reserved. Make your Rajasthan journey your way.
           </div>
 
           <div className="flex flex-wrap items-center gap-4 text-xs">

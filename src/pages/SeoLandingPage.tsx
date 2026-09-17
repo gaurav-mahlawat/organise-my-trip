@@ -25,7 +25,7 @@ export const SeoLandingPage: React.FC = () => {
           <div className="relative z-10 max-w-3xl space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Local Rajasthan travel company · Since 2011</span>
+              <span>Infinity Hospitality · Rajasthan Experiences</span>
             </div>
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-serif">
               {landing.h1}
@@ -39,7 +39,7 @@ export const SeoLandingPage: React.FC = () => {
                 Duration: <strong className="text-amber-300">{landing.targetDuration}</strong>
               </div>
               <div className="bg-white/10 px-3 py-1.5 rounded-lg border border-white/10">
-                Starting: <strong className="text-amber-300">₹{landing.startingPrice.toLocaleString('en-IN')}/person</strong>
+                Starting: <strong className="text-amber-300">{landing.startingPrice ? `₹${landing.startingPrice.toLocaleString('en-IN')}/person` : 'On Request (Date-Dependent)'}</strong>
               </div>
             </div>
           </div>
@@ -95,7 +95,11 @@ export const SeoLandingPage: React.FC = () => {
                       </h4>
                       <p className="text-xs text-slate-500 line-clamp-1 grow">{pkg.route}</p>
                       <div className="pt-2 border-t border-stone-100 flex justify-between items-center text-xs">
-                        <strong className="text-slate-900">₹{pkg.startingPrice.toLocaleString('en-IN')}</strong>
+                        {pkg.startingPrice ? (
+                          <strong className="text-slate-900">₹{pkg.startingPrice.toLocaleString('en-IN')}</strong>
+                        ) : (
+                          <strong className="text-amber-700">Price on Request</strong>
+                        )}
                         <span className="text-amber-800 font-bold text-[11px]">View Details →</span>
                       </div>
                     </div>
@@ -141,7 +145,7 @@ export const SeoLandingPage: React.FC = () => {
 
             <div className="pt-2">
               <a
-                href={getWhatsAppLink(`Hi Organise My Trip, I am inquiring about "${landing.title}". Please share details and best quotation.`)}
+                href={getWhatsAppLink(`Hi Infinity Hospitality, I am inquiring about "${landing.title}". Please share details and best quotation.`)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold flex items-center justify-center gap-2 transition-colors"

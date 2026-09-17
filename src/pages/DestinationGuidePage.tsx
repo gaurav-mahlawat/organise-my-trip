@@ -130,7 +130,11 @@ export const DestinationGuidePage: React.FC = () => {
                         {pkg.title}
                       </h4>
                       <div className="flex justify-between items-center text-xs pt-1 border-t border-stone-100">
-                        <strong className="text-slate-900">₹{pkg.startingPrice.toLocaleString('en-IN')}</strong>
+                        {pkg.startingPrice ? (
+                          <strong className="text-slate-900">₹{pkg.startingPrice.toLocaleString('en-IN')}</strong>
+                        ) : (
+                          <strong className="text-amber-700">On Request</strong>
+                        )}
                         <span className="text-amber-800 font-bold text-[11px]">View →</span>
                       </div>
                     </div>

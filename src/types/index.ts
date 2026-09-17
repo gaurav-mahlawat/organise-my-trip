@@ -8,11 +8,11 @@ export interface TourPackage {
   destinations: string[]; // e.g. ['Jaipur', 'Jodhpur', 'Udaipur']
   theme: 'Heritage & Culture' | 'Desert & Forts' | 'Wildlife & Nature' | 'Spiritual & Pilgrimage' | 'Luxury Royal' | 'Romantic Honeymoon' | 'Short Weekend' | string;
   category?: string; // alias for theme/category
-  startingPrice: number; // in INR
+  startingPrice?: number; // in INR - omit for date-dependent promotional circuits
   originalPrice?: number;
   featured: boolean;
-  rating: number;
-  reviewCount: number;
+  rating?: number;
+  reviewCount?: number;
   image: string;
   heroImage?: string; // alias for image
   gallery: string[];

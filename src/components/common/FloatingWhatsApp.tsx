@@ -31,7 +31,7 @@ export const FloatingWhatsApp: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="w-14 h-14 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl transition-all transform hover:scale-110 active:scale-95 relative group"
-        title="Chat on WhatsApp with Organise My Trip"
+        title="Chat on WhatsApp with Infinity Hospitality"
         id="floating-whatsapp-cta"
       >
         <MessageCircle className="w-7 h-7 fill-white/20" />

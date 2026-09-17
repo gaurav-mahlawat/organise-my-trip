@@ -15,10 +15,10 @@ export const ContactUsPage: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-amber-950/75 to-slate-900/90" />
           <div className="relative z-10 max-w-3xl space-y-3">
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-serif">
-              Contact Organise My Trip
+              Contact Infinity Hospitality
             </h1>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              We operate two physical offices in Rajasthan. Reach out directly to discuss your custom vacation plan or intercity taxi requirements.
+              Travel with Infinity Hospitality — Rajasthan Experiences. Reach out directly to discuss your custom vacation plan, curated tour collection, or intercity taxi requirements.
             </p>
           </div>
         </div>
@@ -30,22 +30,22 @@ export const ContactUsPage: React.FC = () => {
             <div className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200 shadow-xs space-y-4">
               <div className="flex items-center gap-2 text-xs font-bold text-amber-800 uppercase tracking-wider">
                 <MapPin className="w-4 h-4 text-amber-700" />
-                <span>Head Office — Jaipur</span>
+                <span>Infinity Hospitality</span>
               </div>
               <h3 className="text-lg font-serif font-bold text-slate-900">
-                Organise My Trip (Jaipur HQ)
+                Rajasthan Experiences · Jaipur Office
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Plot 42, Near Panch Batti, Mirza Ismail (MI) Road, C-Scheme, Jaipur, Rajasthan 302001
+                Jaipur · Rajasthan · India
               </p>
               <div className="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-stone-100">
                 <div className="flex items-center gap-2">
                   <Phone className="w-3.5 h-3.5 text-amber-700" />
-                  <span>+91 98290 12345 / +91 141 2367890</span>
+                  <span>Call / WhatsApp: 8306906623</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-3.5 h-3.5 text-amber-700" />
-                  <span>info@organisemytrip.com</span>
+                  <span>himanshu@infinityhospitality.co.in</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="w-3.5 h-3.5 text-amber-700" />
@@ -54,28 +54,18 @@ export const ContactUsPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Udaipur Regional Desk */}
+            {/* Curated Collection Box */}
             <div className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200 shadow-xs space-y-4">
               <div className="flex items-center gap-2 text-xs font-bold text-amber-800 uppercase tracking-wider">
-                <MapPin className="w-4 h-4 text-amber-700" />
-                <span>Regional Desk — Udaipur</span>
+                <ShieldCheck className="w-4 h-4 text-amber-700" />
+                <span>Rajasthan Curated Tour Collection</span>
               </div>
               <h3 className="text-lg font-serif font-bold text-slate-900">
-                Organise My Trip (Udaipur Operations)
+                8 Promotional Itineraries
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Opposite Rang Niwas Palace, Lake Palace Road, Kalaji Goraji, Udaipur, Rajasthan 313001
+                Heritage · Wildlife · Lakes · Desert · Luxury. Designed for promotional use, these ready-to-sell Rajasthan circuits can be customised by hotel category, vehicle, meal plan, safari availability and travel dates.
               </p>
-              <div className="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-stone-100">
-                <div className="flex items-center gap-2">
-                  <Phone className="w-3.5 h-3.5 text-amber-700" />
-                  <span>+91 98290 12346 / +91 294 2421100</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Mail className="w-3.5 h-3.5 text-amber-700" />
-                  <span>udaipur@organisemytrip.com</span>
-                </div>
-              </div>
             </div>
 
             {/* Direct WhatsApp Box */}
@@ -88,7 +78,7 @@ export const ContactUsPage: React.FC = () => {
                 Need urgent quote or flight delay assistance? Chat directly with our senior trip coordinators on WhatsApp. Average response time: under 5 minutes.
               </p>
               <a
-                href={getWhatsAppLink("Hello Organise My Trip, I need assistance with travel planning in Rajasthan.")}
+                href={getWhatsAppLink("Hello Infinity Hospitality, I need assistance with travel planning in Rajasthan.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition-colors"
@@ -104,7 +94,7 @@ export const ContactUsPage: React.FC = () => {
               Send an Enquiry
             </h3>
             <p className="text-xs text-slate-500">
-              Fill in your dates and traveler count, and we will send a detailed customized itinerary and transparent quotation.
+              Fill in your dates, traveller count, rooming and hotel category, and we will send a detailed customized itinerary and final quotation.
             </p>
             <EnquiryForm formType="tour" />
           </div>

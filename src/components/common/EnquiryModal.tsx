@@ -26,7 +26,7 @@ export const EnquiryModal: React.FC = () => {
 
           <div className="flex items-center gap-2 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-1">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Direct Local Booking · Since 2011</span>
+            <span>Infinity Hospitality · Rajasthan Experiences</span>
           </div>
 
           <h2 className="text-xl sm:text-2xl font-bold font-serif">

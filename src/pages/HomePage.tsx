@@ -52,12 +52,12 @@ export const HomePage: React.FC = () => {
 
   const FAQS = [
     {
-      q: 'Why should I book with Organise My Trip rather than standard online portals?',
-      a: 'We are a real local Rajasthan destination management company established in 2011 with physical guest relations offices in Jaipur and Udaipur. Unlike aggregators who resell to unknown third-party vendors, we own our tourist taxi fleet, personally inspect every heritage hotel, and provide you with a dedicated 24/7 on-ground trip concierge throughout your stay.'
+      q: 'Why should I book with Infinity Hospitality rather than standard online portals?',
+      a: 'Infinity Hospitality is a local Rajasthan travel company based in Jaipur, Rajasthan. Our ready-to-sell circuits are operated directly with our own verified chauffeurs and hotel partners across the state, and every itinerary is fully customisable by hotel category, vehicle, meal plan, safari availability and travel dates.'
     },
     {
       q: 'Are your Rajasthan tour packages 100% private and customizable?',
-      a: 'Yes, absolutely. Every single tour package is private to your family or group. You have your dedicated air-conditioned vehicle and professional chauffeur. We can adjust the route, add extra nights in Jaisalmer or Udaipur, upgrade to royal palace rooms, or incorporate wildlife safaris according to your personal schedule.'
+      a: 'Yes, absolutely. Every circuit is private to your family or group with your dedicated air-conditioned vehicle and professional chauffeur. Add 3*/4*/5* hotels, breakfast or MAP meal plans, guides, safari permits, desert camps, cultural evenings and airport/rail transfers as required.'
     },
     {
       q: 'When is the best time of year to visit Rajasthan?',
@@ -65,15 +65,15 @@ export const HomePage: React.FC = () => {
     },
     {
       q: 'What is included in the quoted package prices?',
-      a: 'Our comprehensive packages include: verified 3/4/5-star accommodation with daily breakfast and traditional dinners, all private intercity transfers and local sightseeing in an AC vehicle with commercial tourist permit, interstate taxes, toll fees, parking charges, driver allowances, and dedicated 24/7 concierge support.'
+      a: 'Each circuit can include your chosen hotel category (3*/4*/5*), breakfast or MAP meal plan, private AC vehicle, guides, safari permits, desert camp, cultural evenings and airport/rail transfers. Final quotations are prepared after confirming travel dates, pax, rooming and hotel category.'
     },
     {
       q: 'How does the booking and payment process work?',
-      a: 'After you review and finalize your personalized itinerary, we require a nominal 20% advance token deposit to confirm your hotel bookings and block your dedicated vehicle. The remaining balance can be paid upon arrival in Rajasthan.'
+      a: 'Share your travel dates, number of travellers, rooming and hotel category with our team, and we will prepare a date-valid final quotation. Once you approve the personalised itinerary, we confirm your hotels, vehicle and safari permits.'
     },
     {
       q: 'Can you arrange Ranthambore Tiger Safari permits and desert camping?',
-      a: 'Yes. We are authorized by the Rajasthan Forest Department for Ranthambore Jeep/Canter safari reservations. In Jaisalmer, we partner with premium Swiss tent camps in Sam Sand Dunes with private attached bathrooms, sunset camel rides, and folk cultural shows.'
+      a: 'Yes. Safari permits and desert camp experiences are available on our Ranthambhore and Jaisalmer circuits, subject to availability and season. We confirm permits with your final quotation once travel dates are fixed.'
     }
   ];
 
@@ -93,7 +93,7 @@ export const HomePage: React.FC = () => {
             {/* Tagline Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-semibold backdrop-blur-xs">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              <span>Local Rajasthan travel company · Since 2011</span>
+              <span>Infinity Hospitality · Rajasthan Experiences</span>
             </div>
 
             {/* Main Headline */}
@@ -113,7 +113,7 @@ export const HomePage: React.FC = () => {
                 id="hero-explore-packages-cta"
               >
                 <Compass className="w-4 h-4 text-slate-950" />
-                <span>Explore Tour Packages (29)</span>
+                <span>Explore Curated Tours (8)</span>
               </button>
 
               <button
@@ -158,22 +158,22 @@ export const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-around gap-6 text-center text-xs sm:text-sm font-medium">
           <div className="flex items-center gap-2">
             <Award className="w-5 h-5 text-amber-300 shrink-0" />
-            <span>Serving Travelers Since 2011</span>
+            <span>Based in Jaipur, Rajasthan, India</span>
           </div>
           <div className="hidden sm:block w-px h-6 bg-amber-700/60" />
           <div className="flex items-center gap-2">
             <Users className="w-5 h-5 text-amber-300 shrink-0" />
-            <span>15,000+ Satisfied Guests</span>
+            <span>100% Private & Customisable Tours</span>
           </div>
           <div className="hidden md:block w-px h-6 bg-amber-700/60" />
           <div className="flex items-center gap-2">
             <Car className="w-5 h-5 text-amber-300 shrink-0" />
-            <span>Own Fleet of 60+ Tourist Taxis</span>
+            <span>3★ / 4★ / 5★ Hotel Options</span>
           </div>
           <div className="hidden lg:block w-px h-6 bg-amber-700/60" />
           <div className="flex items-center gap-2">
             <Star className="w-5 h-5 text-amber-300 fill-amber-300 shrink-0" />
-            <span>4.9 / 5.0 Rated Local Specialist</span>
+            <span>Heritage · Wildlife · Lakes · Desert · Luxury</span>
           </div>
         </div>
       </section>
@@ -246,23 +246,23 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 4. FEATURED TOUR PACKAGES (29 Tours Catalog) */}
+      {/* 4. FEATURED TOUR PACKAGES (8 Curated Circuits) */}
       <section className="py-16 sm:py-20 bg-white" id="tour-packages">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-10 space-y-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
-              Handcrafted Royal Itineraries
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-bold font-serif text-slate-900">
-              Popular Rajasthan Tour Packages
-            </h2>
-            <p className="text-sm text-slate-600">
-              Private chauffeur-driven journeys with verified heritage boutique hotels, daily breakfast, and local concierge care.
-            </p>
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
+                Handcrafted Royal Itineraries
+              </span>
+              <h2 className="text-2xl sm:text-4xl font-bold font-serif text-slate-900">
+                Rajasthan Curated Tour Collection
+              </h2>
+              <p className="text-sm text-slate-600">
+                8 promotional itineraries · Heritage · Wildlife · Lakes · Desert · Luxury — each customisable by hotel category, vehicle, meal plan, safari availability and travel dates.
+              </p>
 
-            {/* Filter Buttons */}
-            <div className="flex flex-wrap items-center justify-center gap-2 pt-4">
-              {['All', 'Golden Triangle', 'Heritage & Forts', 'Honeymoon & Romantic', 'Desert & Safari', 'Wildlife & Nature'].map(cat => (
+              {/* Filter Buttons */}
+              <div className="flex flex-wrap items-center justify-center gap-2 pt-4">
+                {['All', 'Heritage & Forts', 'Wildlife & Safari', 'Desert & Safari', 'Luxury & Leisure', 'Family & Groups'].map(cat => (
                 <button
                   key={cat}
                   onClick={() => setPackageCategory(cat)}
@@ -344,8 +344,12 @@ export const HomePage: React.FC = () => {
                     <div>
                       <span className="text-[10px] text-slate-400 uppercase font-semibold block">Starting from</span>
                       <div className="flex items-baseline gap-1">
-                        <span className="text-lg font-bold text-slate-900">₹{pkg.startingPrice.toLocaleString('en-IN')}</span>
-                        <span className="text-[10px] text-slate-500">/ person</span>
+                        {pkg.startingPrice ? (
+                          <span className="text-lg font-bold text-slate-900">₹{pkg.startingPrice.toLocaleString('en-IN')}</span>
+                        ) : (
+                          <span className="text-sm font-bold text-amber-700">Price on Request</span>
+                        )}
+                        {pkg.startingPrice && <span className="text-[10px] text-slate-500">/ person</span>}
                       </div>
                     </div>
 
@@ -374,7 +378,7 @@ export const HomePage: React.FC = () => {
               onClick={() => navigate('/packages')}
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-sm font-bold shadow-md transition-colors"
             >
-              <span>View All 29 Rajasthan Tour Packages</span>
+              <span>View All 8 Curated Tour Packages</span>
               <ArrowRight className="w-4 h-4 text-amber-400" />
             </button>
           </div>
@@ -686,7 +690,7 @@ export const HomePage: React.FC = () => {
               {/* CTA */}
               <div className="pt-2">
                 <a
-                  href={getWhatsAppLink(`Hi Organise My Trip, I calculated an estimate of ₹${getEstimatedCost()} for ${calcDays} days and ${calcTravelers} travelers (${calcTier} tier). Please share options!`)}
+                  href={getWhatsAppLink(`Hi Infinity Hospitality, I calculated an estimate of ₹${getEstimatedCost()} for ${calcDays} days and ${calcTravelers} travelers (${calcTier} tier). Please share options!`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold flex items-center justify-center gap-2 transition-colors shadow-md"
@@ -721,48 +725,48 @@ export const HomePage: React.FC = () => {
       <section className="py-16 sm:py-20 bg-stone-100/60 border-t border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12 space-y-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
-              The Organise My Trip Advantage
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-bold font-serif text-slate-900">
-              Why Travelers Trust Organise My Trip Since 2011
-            </h2>
-            <p className="text-sm text-slate-600">
-              We are rooted on the ground in Rajasthan. Here is what separates our private journeys from generic aggregator portals.
-            </p>
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
+                The Infinity Hospitality Advantage
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-bold font-serif text-slate-900">
+                Why Travelers Choose Infinity Hospitality
+              </h2>
+              <p className="text-sm text-slate-600">
+                We are rooted on the ground in Jaipur, Rajasthan. Here is what separates our private journeys from generic aggregator portals.
+              </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 icon: ShieldCheck,
-                title: 'Real Local Rajasthan Offices',
-                desc: 'Located on MI Road Jaipur and Lake Palace Road Udaipur. If you need any assistance on the road, our local operations team is just a call away.'
+                title: 'Local Jaipur Operations',
+                desc: 'Infinity Hospitality is based in Jaipur, Rajasthan, India. On the road, our local operations team is just a call away.'
               },
               {
                 icon: Car,
-                title: 'Own Dedicated Tourist Fleet',
-                desc: 'No third-party car brokers. We maintain our own fleet of commercially permitted Sedans, Ertigas, Innova Crystas, and Tempo Travellers.'
+                title: 'Dedicated Tourist Vehicles',
+                desc: 'Private vehicles with experienced chauffeurs — no third-party car brokers. Add vehicle category of your choice to any circuit.'
               },
               {
                 icon: Award,
-                title: 'Senior English/Hindi Chauffeurs',
-                desc: 'Our courteous drivers possess 10+ years of highway experience, polite manners, and deep knowledge of authentic highway dhabas and photo spots.'
+                title: 'Curated Promotional Circuits',
+                desc: '8 ready-to-sell Rajasthan itineraries covering Heritage, Wildlife, Lakes, Desert and Luxury, designed for easy selling and easy travel.'
               },
               {
                 icon: Sparkles,
                 title: '100% Tailor-Made Flexibility',
-                desc: 'Travel at your own comfortable pace. Stop whenever you wish for tea or photography, adjust sightseeing timings, or swap monuments on the fly.'
+                desc: 'Customise by hotel category, meal plan, vehicle, safari availability and travel dates. Travel at your own comfortable pace.'
               },
               {
                 icon: Star,
                 title: 'Transparent, Fair Pricing',
-                desc: 'All quoted prices are strictly all-inclusive of interstate road taxes, toll fees, parking, driver allowances, and fuel. Zero surprise charges.'
+                desc: 'Rates are date-dependent. Final quotations are prepared only after confirming travel dates, pax, rooming and hotel category.'
               },
               {
                 icon: HeartHandshake,
-                title: 'Verified Heritage Havelis & Stays',
-                desc: 'We personally inspect every hotel partner to ensure genuine Rajput hospitality, spotless linen, clean bathrooms, and authentic cuisine.'
+                title: 'Every Journey Type Covered',
+                desc: 'Private tours, family holidays, honeymoons, luxury escapes, corporate groups and destination weddings — made your way.'
               }
             ].map((pillar, i) => {
               const Icon = pillar.icon;
@@ -788,7 +792,7 @@ export const HomePage: React.FC = () => {
               Guest Stories
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold font-serif text-slate-900">
-              Trusted by Over 15,000 Happy Travelers
+              Trusted by Travellers Worldwide
             </h2>
             <div className="flex items-center justify-center gap-1 pt-1 text-amber-500">
               {[...Array(5)].map((_, i) => (
@@ -801,22 +805,22 @@ export const HomePage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
-                quote: 'Organise My Trip organized our 8-day family trip across Jaipur, Jodhpur, and Udaipur. Our chauffeur Surendra ji was exceptionally polite, punctual, and safe. The desert camp in Jaisalmer was magical!',
+                quote: 'Infinity Hospitality organized our 8-day family trip across Jaipur, Ranthambhore and Jodhpur. Our chauffeur was exceptionally polite, punctual, and safe. The desert camp in Jaisalmer was magical!',
                 author: 'Dr. Alok & Priya Sen',
                 origin: 'Mumbai, India',
-                trip: 'Classic Rajasthan Heritage Tour'
+                trip: 'Royal Triangle & Wildlife'
               },
               {
-                quote: 'Coming from London for our 25th anniversary, we wanted authentic luxury without hassle. Organise My Trip booked wonderful boutique havelis and the private Lake Pichola boat ride at sunset was unforgettable.',
+                quote: 'Coming from London for our 25th anniversary, we wanted authentic luxury without hassle. Infinity Hospitality booked wonderful boutique havelis and the private Lake Pichola boat ride at sunset was unforgettable.',
                 author: 'Richard & Catherine Davies',
                 origin: 'London, United Kingdom',
-                trip: 'Romantic Udaipur & Palace Stays'
+                trip: 'Palaces, Lakes & Desert'
               },
               {
-                quote: 'Booked an Innova Crysta for our corporate client from Delhi Airport to Jaipur and Ranthambore. Top-notch sanitized vehicle, clear FASTag billing, and responsive WhatsApp coordinator.',
+                quote: 'Booked an Innova Crysta for our corporate client from Delhi Airport to Jaipur and Ranthambhore. Top-notch sanitized vehicle, clear billing, and responsive WhatsApp coordinator.',
                 author: 'Sunil Aggarwal (Apex Holidays)',
                 origin: 'New Delhi, India',
-                trip: 'B2B Intercity Taxi & Safari Transfer'
+                trip: 'Corporate Group & Safari Transfer'
               }
             ].map((rev, i) => (
               <div key={i} className="bg-stone-50 p-6 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-4">
@@ -955,7 +959,7 @@ export const HomePage: React.FC = () => {
           <div className="mt-8 text-center text-xs text-slate-500">
             Have a specific custom question?{' '}
             <a
-              href={getWhatsAppLink('Hi Organise My Trip, I have a custom question regarding my Rajasthan trip plan.')}
+              href={getWhatsAppLink('Hi Infinity Hospitality, I have a custom question regarding my Rajasthan trip plan.')}
               target="_blank"
               rel="noopener noreferrer"
               className="text-amber-800 font-bold hover:underline"
@@ -978,7 +982,7 @@ export const HomePage: React.FC = () => {
               Are You a Travel Agent or Outbound Tour Operator?
             </h3>
             <p className="text-xs text-slate-300 leading-relaxed">
-              Partner with Organise My Trip for confidential net B2B tariffs, guaranteed commercial tourist cabs, white-label client service, and on-ground emergency handling across Rajasthan.
+              Partner with Infinity Hospitality for confidential net B2B tariffs, ready-to-sell Rajasthan circuits, white-label client service, and on-ground handling across Rajasthan.
             </p>
           </div>
 
@@ -1003,13 +1007,13 @@ export const HomePage: React.FC = () => {
       <section className="py-16 bg-amber-50 border-t border-amber-200/60 text-center px-4">
         <div className="max-w-3xl mx-auto space-y-4">
           <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
-            Start Your Journey Today
+            Make Your Rajasthan Journey Your Way
           </span>
           <h2 className="text-2xl sm:text-4xl font-bold font-serif text-slate-900">
             Ready to Experience Royal Rajasthan?
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Get a tailored itinerary designed around your family’s pace, favorite royal palaces, and hotel choices with zero booking fees.
+            Private tours • Family holidays • Honeymoons • Luxury escapes • Corporate groups • Destination weddings — crafted around your dates, hotel category and pace.
           </p>
           <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
             <button
@@ -1019,11 +1023,11 @@ export const HomePage: React.FC = () => {
               Get My Free Custom Quotation
             </button>
             <a
-              href="tel:+919829012345"
+              href="tel:+918306906623"
               className="px-6 py-3.5 rounded-xl bg-white hover:bg-stone-50 border border-stone-300 text-slate-800 font-semibold text-sm flex items-center gap-2"
             >
               <Phone className="w-4 h-4 text-amber-700" />
-              <span>Call +91 98290 12345</span>
+              <span>Call / WhatsApp 8306906623</span>
             </a>
           </div>
         </div>

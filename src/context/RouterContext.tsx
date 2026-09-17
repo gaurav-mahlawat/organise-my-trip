@@ -45,7 +45,7 @@ const INITIAL_ENQUIRIES: Enquiry[] = [
     adults: 2,
     children: 0,
     hotelTier: 'Deluxe (4 Star)',
-    packageInterest: 'Classic Rajasthan Heritage Tour (7 Days)',
+    packageInterest: 'Royal Rajasthan Highlights (7 Days)',
     message: 'Looking for a private chauffeur driven cab from Jaipur to Udaipur via Jodhpur with nice heritage stays.',
     status: 'new'
   },
@@ -206,9 +206,9 @@ export const RouterProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   };
 
   const getWhatsAppLink = (customMessage?: string) => {
-    const baseNumber = '919829012345'; // Jaipur central reservation
+    const baseNumber = '918306906623'; // Infinity Hospitality - Rajasthan Experiences
     const pageUrl = window.location.href;
-    const msg = customMessage || `Hello Organise My Trip, I am inquiring from your website (${pageUrl}). Please share details and best quotation for Rajasthan trip.`;
+    const msg = customMessage || `Hello Infinity Hospitality, I am inquiring from your website (${pageUrl}). Please share details and best quotation for Rajasthan trip.`;
     return `https://api.whatsapp.com/send?phone=${baseNumber}&text=${encodeURIComponent(msg)}`;
   };
 

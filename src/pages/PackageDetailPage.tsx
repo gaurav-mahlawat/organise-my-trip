@@ -20,7 +20,7 @@ import {
 
 export const PackageDetailPage: React.FC = () => {
   const { params, navigate, openEnquiryModal, getWhatsAppLink } = useRouter();
-  const slug = params.slug || 'classic-rajasthan-7-days';
+  const slug = params.slug || 'royal-rajasthan-highlights';
 
   const pkg = TOUR_PACKAGES.find(p => p.slug === slug) || TOUR_PACKAGES[0];
 
@@ -31,7 +31,7 @@ export const PackageDetailPage: React.FC = () => {
     .filter(p => p.id !== pkg.id && (p.category === pkg.category || p.durationDays === pkg.durationDays))
     .slice(0, 3);
 
-  const waMessage = `Hi Organise My Trip, I am interested in "${pkg.title}" (${pkg.durationDays} Days / ${pkg.durationNights} Nights). Please send full day-by-day itinerary and price quote.`;
+  const waMessage = `Hi Infinity Hospitality, I am interested in "${pkg.title}" (${pkg.durationDays} Days / ${pkg.durationNights} Nights). Please send full day-by-day itinerary and price quote.`;
 
   return (
     <div className="w-full bg-stone-50 pb-20">
@@ -70,6 +70,10 @@ export const PackageDetailPage: React.FC = () => {
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-serif max-w-4xl text-white">
             {pkg.title}
           </h1>
+
+          <p className="text-sm sm:text-base text-amber-300 font-medium max-w-3xl">
+            {pkg.tagline}
+          </p>
 
           <div className="flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-slate-300">
             <div className="flex items-center gap-1.5">
@@ -263,14 +267,20 @@ export const PackageDetailPage: React.FC = () => {
                   Direct Local Operator Fare
                 </span>
                 <div className="flex items-baseline gap-2 mt-0.5">
-                  <span className="text-3xl font-bold font-serif text-slate-900">
-                    ₹{pkg.startingPrice.toLocaleString('en-IN')}
-                  </span>
-                  <span className="text-xs text-slate-500">/ person</span>
+                  {pkg.startingPrice ? (
+                    <>
+                      <span className="text-3xl font-bold font-serif text-slate-900">
+                        ₹{pkg.startingPrice.toLocaleString('en-IN')}
+                      </span>
+                      <span className="text-xs text-slate-500">/ person</span>
+                    </>
+                  ) : (
+                    <span className="text-2xl font-bold font-serif text-amber-700">Price on Request</span>
+                  )}
                 </div>
-                <p className="text-[11px] text-emerald-700 font-medium mt-1 flex items-center gap-1">
+                <p className="text-[11px] text-amber-700 font-medium mt-1 flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5" />
-                  <span>No Booking Fees · 20% Token Deposit Only</span>
+                  <span>Date-Dependent Rates · Customisable by Hotel & Meal Plan</span>
                 </p>
               </div>
 
@@ -307,7 +317,7 @@ export const PackageDetailPage: React.FC = () => {
                 <span>Local Support in Rajasthan</span>
               </h4>
               <p className="text-amber-800 leading-relaxed text-[11px]">
-                Organise My Trip has physical offices on MI Road Jaipur and Lake Palace Road Udaipur. You get direct on-ground assistance 24/7.
+                Infinity Hospitality is a local Rajasthan operator based in Jaipur. Add 3*/4*/5* hotels, breakfast or MAP, private vehicle, guides, safari permits, desert camp, cultural evenings and airport/rail transfers as required.
               </p>
             </div>
           </div>
@@ -343,7 +353,11 @@ export const PackageDetailPage: React.FC = () => {
                     </h3>
                     <p className="text-xs text-slate-500 line-clamp-1">{rp.route}</p>
                     <div className="pt-2 flex justify-between items-center text-xs">
-                      <strong className="text-slate-900">₹{rp.startingPrice.toLocaleString('en-IN')}</strong>
+                      {rp.startingPrice ? (
+                        <strong className="text-slate-900">₹{rp.startingPrice.toLocaleString('en-IN')}</strong>
+                      ) : (
+                        <strong className="text-amber-700">Price on Request</strong>
+                      )}
                       <span className="text-amber-800 font-bold text-[11px]">View Tour →</span>
                     </div>
                   </div>

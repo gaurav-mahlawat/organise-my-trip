@@ -110,7 +110,7 @@ export const AdminPage: React.FC = () => {
               Lead & Booking Inquiries Desk
             </h1>
             <p className="text-xs text-slate-400">
-              Organise My Trip · Direct customer enquiries from website quotation forms and WhatsApp links.
+              Infinity Hospitality · Direct customer enquiries from website quotation forms and WhatsApp links.
             </p>
           </div>
 
@@ -227,7 +227,7 @@ export const AdminPage: React.FC = () => {
         ) : (
           <div className="space-y-3">
             {filtered.map((enq) => {
-              const waReplyMsg = `Hello ${enq.fullName}, greetings from Organise My Trip (Jaipur, Rajasthan)! Thank you for your inquiry regarding ${enq.packageInterest || `${enq.pickupCity || ''} taxi`}. Our trip coordinator has prepared your itinerary and quote.`;
+              const waReplyMsg = `Hello ${enq.fullName}, greetings from Infinity Hospitality (Jaipur, Rajasthan)! Thank you for your inquiry regarding ${enq.packageInterest || `${enq.pickupCity || ''} taxi`}. Our trip coordinator has prepared your itinerary and quote.`;
               const waLink = `https://wa.me/${enq.phone.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(waReplyMsg)}`;
 
               return (

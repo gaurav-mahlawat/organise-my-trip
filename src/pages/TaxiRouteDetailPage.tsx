@@ -10,7 +10,7 @@ export const TaxiRouteDetailPage: React.FC = () => {
 
   const route = TAXI_ROUTES.find(r => r.slug === routeSlug) || TAXI_ROUTES[0];
 
-  const waMsg = `Hi Organise My Trip, I want to book a taxi from ${route.fromCity} to ${route.toCity}. Please share the best quote.`;
+  const waMsg = `Hi Infinity Hospitality, I want to book a taxi from ${route.fromCity} to ${route.toCity}. Please share the best quote.`;
 
   return (
     <div className="w-full bg-stone-50 pb-20">
