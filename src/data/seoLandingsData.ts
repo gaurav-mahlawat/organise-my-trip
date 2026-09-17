@@ -17,8 +17,8 @@ export const SEO_LANDINGS: SeoLandingConfig[] = [
   {
     slug: '7-days-rajasthan-tour-packages',
     title: '7 Days Rajasthan Tour Packages',
-    metaTitle: '7 Days Rajasthan Tour Packages 2026 | Infinity Hospitality',
-    metaDescription: 'Book 7 Days Rajasthan Tour Packages with Infinity Hospitality. Private AC car, verified hotels, Amber Fort, Mehrangarh & Lake Pichola. Customise your 7-day trip.',
+    metaTitle: '7 Days Rajasthan Tour Packages 2026 | Organise My Trip',
+    metaDescription: 'Book 7 Days Rajasthan Tour Packages with Organise My Trip. Private AC car, verified hotels, Amber Fort, Mehrangarh & Lake Pichola. Customise your 7-day trip.',
     h1: 'Best 7-Day Rajasthan Tour Packages (2026)',
     subtitle: 'Handcrafted week-long itineraries across Jaipur, Jodhpur & Jaisalmer with dedicated chauffeur and local concierge.',
     targetDuration: '7 Days / 6 Nights',
@@ -33,14 +33,14 @@ export const SEO_LANDINGS: SeoLandingConfig[] = [
     faqs: [
       { question: 'Is 7 days enough to see Rajasthan?', answer: 'Yes! A 7-day circuit covering Jaipur, Jodhpur, and Udaipur gives you an exceptional introduction to the forts, desert culture, and romantic lakes without rushing.' },
       { question: 'What is the starting price for a 7-day tour?', answer: 'Rates are date-dependent. Final quotations are prepared after confirming travel dates, pax, rooming and hotel category — covering your chosen 3*/4*/5* hotels, meal plan, private cab, safari permits and transfers.' },
-      { question: 'Can we customize the route or add Ranthambore?', answer: 'Absolutely. Every Infinity Hospitality circuit can be customised by hotel category, vehicle, meal plan, safari availability and travel dates.' }
+      { question: 'Can we customize the route or add Ranthambore?', answer: 'Absolutely. Every Organise My Trip circuit can be customised by hotel category, vehicle, meal plan, safari availability and travel dates.' }
     ],
     overviewHtml: 'A week in Rajasthan offers the ideal blend of majestic architecture, royal cuisine, and colourful bazaars. Our 7-day itineraries are designed with optimized driving times so you spend more time exploring palaces and less time on the road.'
   },
   {
     slug: '10-days-rajasthan-tour-packages',
     title: '10 Days Rajasthan Tour Packages',
-    metaTitle: '10 Days Rajasthan Tour Packages | Desert & Royal Palaces | Infinity Hospitality',
+    metaTitle: '10 Days Rajasthan Tour Packages | Desert & Royal Palaces | Organise My Trip',
     metaDescription: 'Explore Jaipur, Bikaner, Jaisalmer Desert, Jodhpur & Udaipur on a 10-day Rajasthan tour with luxury desert camp and private car.',
     h1: '10 Days Rajasthan Grand Tour Packages',
     subtitle: 'From the pink palaces of Jaipur to Thar desert sand dunes and lakeside palaces of Udaipur.',
@@ -62,7 +62,7 @@ export const SEO_LANDINGS: SeoLandingConfig[] = [
   {
     slug: 'rajasthan-tour-packages-from-delhi',
     title: 'Rajasthan Tour Packages from Delhi',
-    metaTitle: 'Rajasthan Tour Packages from Delhi by Car | Infinity Hospitality',
+    metaTitle: 'Rajasthan Tour Packages from Delhi by Car | Organise My Trip',
     metaDescription: 'Doorstep pickup from Delhi Airport / NCR in private AC cab. Explore Jaipur, Ranthambhore, Pushkar, Jodhpur and Jaisalmer with reliable local drivers.',
     h1: 'Rajasthan Tour Packages from Delhi (With Private Cab)',
     subtitle: 'Seamless doorstep pickup from Delhi IGI Airport, Gurgaon or Noida with dedicated highway chauffeurs.',
@@ -83,7 +83,7 @@ export const SEO_LANDINGS: SeoLandingConfig[] = [
   {
     slug: 'luxury-rajasthan-tour-packages',
     title: 'Luxury Rajasthan Tour Packages',
-    metaTitle: 'Luxury Rajasthan Tour Packages | 5-Star Palace Stays | Infinity Hospitality',
+    metaTitle: 'Luxury Rajasthan Tour Packages | 5-Star Palace Stays | Organise My Trip',
     metaDescription: 'Experience royalty with premium palace stays and private luxury transport. Jawai leopard safaris, royal dining, and personal tour concierge.',
     h1: 'Luxury Rajasthan Palace Holidays & Royal Tours',
     subtitle: 'Stay in premium heritage properties with bespoke dining, private boat charters, and executive chauffeurs.',
@@ -103,7 +103,7 @@ export const SEO_LANDINGS: SeoLandingConfig[] = [
   {
     slug: 'rajasthan-honeymoon-packages',
     title: 'Romantic Rajasthan Honeymoon Packages',
-    metaTitle: 'Rajasthan Honeymoon Packages 2026 | Romantic Escapes | Infinity Hospitality',
+    metaTitle: 'Rajasthan Honeymoon Packages 2026 | Romantic Escapes | Organise My Trip',
     metaDescription: 'Private Lake Pichola cruises, romantic palace stays, and desert camp evenings. Romantic Rajasthan honeymoon packages customized for newly-weds.',
     h1: 'Romantic Rajasthan Honeymoon Tour Packages',
     subtitle: 'Create lifelong memories with private lake cruises, palace stays, and starlit desert evenings.',

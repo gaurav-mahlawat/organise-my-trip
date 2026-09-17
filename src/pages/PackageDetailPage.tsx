@@ -31,7 +31,7 @@ export const PackageDetailPage: React.FC = () => {
     .filter(p => p.id !== pkg.id && (p.category === pkg.category || p.durationDays === pkg.durationDays))
     .slice(0, 3);
 
-  const waMessage = `Hi Infinity Hospitality, I am interested in "${pkg.title}" (${pkg.durationDays} Days / ${pkg.durationNights} Nights). Please send full day-by-day itinerary and price quote.`;
+  const waMessage = `Hi Organise My Trip, I am interested in "${pkg.title}" (${pkg.durationDays} Days / ${pkg.durationNights} Nights). Please send full day-by-day itinerary and price quote.`;
 
   return (
     <div className="w-full bg-stone-50 pb-20">
@@ -317,7 +317,7 @@ export const PackageDetailPage: React.FC = () => {
                 <span>Local Support in Rajasthan</span>
               </h4>
               <p className="text-amber-800 leading-relaxed text-[11px]">
-                Infinity Hospitality is a local Rajasthan operator based in Jaipur. Add 3*/4*/5* hotels, breakfast or MAP, private vehicle, guides, safari permits, desert camp, cultural evenings and airport/rail transfers as required.
+                Organise My Trip is a local Rajasthan operator based in Jaipur. Add 3*/4*/5* hotels, breakfast or MAP, private vehicle, guides, safari permits, desert camp, cultural evenings and airport/rail transfers as required.
               </p>
             </div>
           </div>

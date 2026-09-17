@@ -17,7 +17,7 @@ export const TaxiOverviewPage: React.FC = () => {
           <div className="relative z-10 max-w-3xl space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold">
               <Car className="w-3.5 h-3.5" />
-              <span>Rajasthan Commercial Tourist Fleet · Infinity Hospitality</span>
+              <span>Rajasthan Commercial Tourist Fleet · Organise My Trip</span>
             </div>
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-serif">
               Rajasthan Taxi & Chauffeur Services

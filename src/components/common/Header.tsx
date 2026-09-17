@@ -37,7 +37,7 @@ export const Header: React.FC = () => {
           <div className="flex items-center gap-3">
             <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 font-medium text-[11px]">
               <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
-              Infinity Hospitality · Rajasthan Experiences
+              Organise My Trip · Rajasthan Experiences
             </span>
             <span className="hidden md:inline text-slate-400">|</span>
             <span className="hidden md:inline text-slate-300 text-[11px]">
@@ -91,11 +91,11 @@ export const Header: React.FC = () => {
           <div 
             onClick={() => navigate('/')} 
             className="flex items-center gap-2.5 cursor-pointer group select-none shrink min-w-0"
-            title="Infinity Hospitality - Home"
+            title="Organise My Trip - Home"
           >
             <img 
               src="images/logo.jpeg" 
-              alt="Infinity Hospitality - Rajasthan Experiences" 
+              alt="Organise My Trip - Rajasthan Experiences" 
               className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02] shrink-0"
               referrerPolicy="no-referrer"
               onError={(e) => {
@@ -106,7 +106,7 @@ export const Header: React.FC = () => {
             />
             <div className="flex flex-col leading-tight min-w-0">
               <span className="font-serif text-[15px] sm:text-base font-bold tracking-tight text-slate-900 group-hover:text-amber-800 transition-colors truncate">
-                Infinity Hospitality
+                Organise My Trip
               </span>
               <span className="hidden sm:block text-[8px] tracking-wide text-amber-800 font-semibold uppercase truncate">
                 Rajasthan Experiences
@@ -396,7 +396,7 @@ export const Header: React.FC = () => {
               onClick={() => { navigate('/about-us'); setIsMobileMenuOpen(false); }}
               className="text-left px-3 py-2.5 text-sm text-slate-600 hover:bg-slate-50"
             >
-              About Infinity Hospitality
+              About Organise My Trip
             </button>
             <button 
               onClick={() => { navigate('/contact-us'); setIsMobileMenuOpen(false); }}

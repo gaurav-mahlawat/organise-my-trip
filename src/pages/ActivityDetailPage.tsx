@@ -10,7 +10,7 @@ export const ActivityDetailPage: React.FC = () => {
 
   const act = ACTIVITIES.find(a => a.slug === slug) || ACTIVITIES[0];
 
-  const waMsg = `Hi Infinity Hospitality, I am interested in booking "${act.title}" in ${act.location}. Please share availability and booking details.`;
+  const waMsg = `Hi Organise My Trip, I am interested in booking "${act.title}" in ${act.location}. Please share availability and booking details.`;
 
   return (
     <div className="w-full bg-stone-50 pb-20">

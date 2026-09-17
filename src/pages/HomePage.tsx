@@ -52,8 +52,8 @@ export const HomePage: React.FC = () => {
 
   const FAQS = [
     {
-      q: 'Why should I book with Infinity Hospitality rather than standard online portals?',
-      a: 'Infinity Hospitality is a local Rajasthan travel company based in Jaipur, Rajasthan. Our ready-to-sell circuits are operated directly with our own verified chauffeurs and hotel partners across the state, and every itinerary is fully customisable by hotel category, vehicle, meal plan, safari availability and travel dates.'
+      q: 'Why should I book with Organise My Trip rather than standard online portals?',
+      a: 'Organise My Trip is a local Rajasthan travel company based in Jaipur, Rajasthan. Our ready-to-sell circuits are operated directly with our own verified chauffeurs and hotel partners across the state, and every itinerary is fully customisable by hotel category, vehicle, meal plan, safari availability and travel dates.'
     },
     {
       q: 'Are your Rajasthan tour packages 100% private and customizable?',
@@ -93,7 +93,7 @@ export const HomePage: React.FC = () => {
             {/* Tagline Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-semibold backdrop-blur-xs">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              <span>Infinity Hospitality · Rajasthan Experiences</span>
+              <span>Organise My Trip · Rajasthan Experiences</span>
             </div>
 
             {/* Main Headline */}
@@ -690,7 +690,7 @@ export const HomePage: React.FC = () => {
               {/* CTA */}
               <div className="pt-2">
                 <a
-                  href={getWhatsAppLink(`Hi Infinity Hospitality, I calculated an estimate of ₹${getEstimatedCost()} for ${calcDays} days and ${calcTravelers} travelers (${calcTier} tier). Please share options!`)}
+                  href={getWhatsAppLink(`Hi Organise My Trip, I calculated an estimate of ₹${getEstimatedCost()} for ${calcDays} days and ${calcTravelers} travelers (${calcTier} tier). Please share options!`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold flex items-center justify-center gap-2 transition-colors shadow-md"
@@ -726,10 +726,10 @@ export const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12 space-y-2">
               <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
-                The Infinity Hospitality Advantage
+                The Organise My Trip Advantage
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold font-serif text-slate-900">
-                Why Travelers Choose Infinity Hospitality
+                Why Travelers Choose Organise My Trip
               </h2>
               <p className="text-sm text-slate-600">
                 We are rooted on the ground in Jaipur, Rajasthan. Here is what separates our private journeys from generic aggregator portals.
@@ -741,7 +741,7 @@ export const HomePage: React.FC = () => {
               {
                 icon: ShieldCheck,
                 title: 'Local Jaipur Operations',
-                desc: 'Infinity Hospitality is based in Jaipur, Rajasthan, India. On the road, our local operations team is just a call away.'
+                desc: 'Organise My Trip is based in Jaipur, Rajasthan, India. On the road, our local operations team is just a call away.'
               },
               {
                 icon: Car,
@@ -806,14 +806,14 @@ export const HomePage: React.FC = () => {
             {[
               {
                 image: 'images/packages/jaisalmer-golden-fort.jpg',
-                quote: 'Infinity Hospitality organized our 8-day family trip across Jaipur, Ranthambhore and Jodhpur. Our chauffeur was exceptionally polite, punctual, and safe. The desert camp in Jaisalmer was magical!',
+                quote: 'Organise My Trip organized our 8-day family trip across Jaipur, Ranthambhore and Jodhpur. Our chauffeur was exceptionally polite, punctual, and safe. The desert camp in Jaisalmer was magical!',
                 author: 'Dr. Alok & Priya Sen',
                 origin: 'Mumbai, India',
                 trip: 'Royal Triangle & Wildlife'
               },
               {
                 image: 'images/packages/udaipur-city-palace.jpg',
-                quote: 'Coming from London for our 25th anniversary, we wanted authentic luxury without hassle. Infinity Hospitality booked wonderful boutique havelis and the private Lake Pichola boat ride at sunset was unforgettable.',
+                quote: 'Coming from London for our 25th anniversary, we wanted authentic luxury without hassle. Organise My Trip booked wonderful boutique havelis and the private Lake Pichola boat ride at sunset was unforgettable.',
                 author: 'Richard & Catherine Davies',
                 origin: 'London, United Kingdom',
                 trip: 'Palaces, Lakes & Desert'
@@ -973,7 +973,7 @@ export const HomePage: React.FC = () => {
           <div className="mt-8 text-center text-xs text-slate-500">
             Have a specific custom question?{' '}
             <a
-              href={getWhatsAppLink('Hi Infinity Hospitality, I have a custom question regarding my Rajasthan trip plan.')}
+              href={getWhatsAppLink('Hi Organise My Trip, I have a custom question regarding my Rajasthan trip plan.')}
               target="_blank"
               rel="noopener noreferrer"
               className="text-amber-800 font-bold hover:underline"
@@ -996,7 +996,7 @@ export const HomePage: React.FC = () => {
               Are You a Travel Agent or Outbound Tour Operator?
             </h3>
             <p className="text-xs text-slate-300 leading-relaxed">
-              Partner with Infinity Hospitality for confidential net B2B tariffs, ready-to-sell Rajasthan circuits, white-label client service, and on-ground handling across Rajasthan.
+              Partner with Organise My Trip for confidential net B2B tariffs, ready-to-sell Rajasthan circuits, white-label client service, and on-ground handling across Rajasthan.
             </p>
           </div>
 

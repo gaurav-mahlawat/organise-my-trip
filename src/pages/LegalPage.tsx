@@ -19,7 +19,7 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
             <div className="relative z-10 max-w-3xl space-y-3">
               <h1 className="text-2xl sm:text-4xl font-bold font-serif">HTML Sitemap Directory</h1>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Browse the complete network of all pages and tour packages offered by Infinity Hospitality.
+                Browse the complete network of all pages and tour packages offered by Organise My Trip.
               </p>
             </div>
           </div>
@@ -39,7 +39,7 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
                   <li><button onClick={() => navigate('/rajasthan-car-rental')} className="hover:text-amber-800">Car Rental with Driver</button></li>
                   <li><button onClick={() => navigate('/blog')} className="hover:text-amber-800">Travel Guide & Blog</button></li>
                   <li><button onClick={() => navigate('/b2b-rajasthan-dmc')} className="hover:text-amber-800">B2B DMC Travel Desk</button></li>
-                  <li><button onClick={() => navigate('/about-us')} className="hover:text-amber-800">About Infinity Hospitality</button></li>
+                  <li><button onClick={() => navigate('/about-us')} className="hover:text-amber-800">About Organise My Trip</button></li>
                   <li><button onClick={() => navigate('/contact-us')} className="hover:text-amber-800">Contact Us</button></li>
                   <li><button onClick={() => navigate('/admin')} className="hover:text-amber-800 text-amber-700 font-bold">Admin Inquiry Portal</button></li>
                 </ul>
@@ -96,7 +96,7 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
   const contentMap = {
     privacy: {
       title: 'Privacy Policy',
-      subtitle: 'How Infinity Hospitality handles traveler data and communication privacy.',
+      subtitle: 'How Organise My Trip handles traveler data and communication privacy.',
       sections: [
         {
           heading: '1. Information We Collect',
@@ -104,7 +104,7 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
         },
         {
           heading: '2. Zero Data Selling Commitment',
-          body: 'Infinity Hospitality never sells, rents, or licenses your personal or travel contact information to third-party marketing firms or external agencies. Data is restricted strictly to assigned chauffeurs and verified partner hotels.'
+          body: 'Organise My Trip never sells, rents, or licenses your personal or travel contact information to third-party marketing firms or external agencies. Data is restricted strictly to assigned chauffeurs and verified partner hotels.'
         },
         {
           heading: '3. WhatsApp Communication',
@@ -180,7 +180,7 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
           </div>
 
           <div className="pt-6 border-t border-stone-100 text-xs text-slate-400">
-            Last Updated: January 2026 · Infinity Hospitality (Jaipur · Rajasthan · India)
+            Last Updated: January 2026 · Organise My Trip (Jaipur · Rajasthan · India)
           </div>
         </div>
       </div>

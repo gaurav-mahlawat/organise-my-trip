@@ -15,10 +15,10 @@ export const ContactUsPage: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-amber-950/75 to-slate-900/90" />
           <div className="relative z-10 max-w-3xl space-y-3">
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-serif">
-              Contact Infinity Hospitality
+              Contact Organise My Trip
             </h1>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Travel with Infinity Hospitality — Rajasthan Experiences. Reach out directly to discuss your custom vacation plan, curated tour collection, or intercity taxi requirements.
+              Travel with Organise My Trip — Rajasthan Experiences. Reach out directly to discuss your custom vacation plan, curated tour collection, or intercity taxi requirements.
             </p>
           </div>
         </div>
@@ -30,7 +30,7 @@ export const ContactUsPage: React.FC = () => {
             <div className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200 shadow-xs space-y-4">
               <div className="flex items-center gap-2 text-xs font-bold text-amber-800 uppercase tracking-wider">
                 <MapPin className="w-4 h-4 text-amber-700" />
-                <span>Infinity Hospitality</span>
+                <span>Organise My Trip</span>
               </div>
               <h3 className="text-lg font-serif font-bold text-slate-900">
                 Rajasthan Experiences · Jaipur Office
@@ -86,7 +86,7 @@ export const ContactUsPage: React.FC = () => {
                 Need urgent quote or flight delay assistance? Chat directly with our senior trip coordinators on WhatsApp. Average response time: under 5 minutes.
               </p>
               <a
-                href={getWhatsAppLink("Hello Infinity Hospitality, I need assistance with travel planning in Rajasthan.")}
+                href={getWhatsAppLink("Hello Organise My Trip, I need assistance with travel planning in Rajasthan.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition-colors"

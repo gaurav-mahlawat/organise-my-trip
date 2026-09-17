@@ -100,7 +100,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
   };
 
   if (submittedEnquiry) {
-    const waText = `Hi Infinity Hospitality, I submitted enquiry #${submittedEnquiry.id} for ${
+    const waText = `Hi Organise My Trip, I submitted enquiry #${submittedEnquiry.id} for ${
       formType === 'taxi'
         ? `taxi from ${submittedEnquiry.pickupCity || 'Jaipur'} to ${submittedEnquiry.dropCity || 'Jodhpur'}`
         : (submittedEnquiry.packageInterest || 'Rajasthan Tour')
@@ -406,7 +406,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
           className="mt-0.5 rounded text-amber-600 focus:ring-amber-500 h-3.5 w-3.5"
         />
         <label htmlFor="privacy-consent" className="text-[11px] text-slate-500 leading-tight">
-          I agree to be contacted by Infinity Hospitality local specialists via WhatsApp/Email for the customized quotation. We never spam.
+          I agree to be contacted by Organise My Trip local specialists via WhatsApp/Email for the customized quotation. We never spam.
         </label>
       </div>
 

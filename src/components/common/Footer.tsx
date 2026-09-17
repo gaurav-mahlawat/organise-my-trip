@@ -58,13 +58,13 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-3">
               <img 
                 src="images/logo.jpeg" 
-                alt="Infinity Hospitality - Rajasthan Experiences"
+                alt="Organise My Trip - Rajasthan Experiences"
                 className="h-14 w-auto object-contain bg-white rounded-md p-1"
                 referrerPolicy="no-referrer"
               />
               <div>
                 <span className="font-serif text-lg font-bold text-white block">
-                  Infinity Hospitality
+                  Organise My Trip
                 </span>
                 <span className="text-[10px] tracking-wider text-amber-400 uppercase font-semibold block">
                   Rajasthan Experiences
@@ -79,7 +79,7 @@ export const Footer: React.FC = () => {
               <div className="flex items-start gap-2 text-slate-300">
                 <MapPin className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                 <div>
-                  <strong className="text-white block">Infinity Hospitality:</strong>
+                  <strong className="text-white block">Organise My Trip:</strong>
                   Jaipur · Rajasthan · India
                 </div>
               </div>
@@ -291,7 +291,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <button onClick={() => navigate('/about-us')} className="hover:text-amber-400 text-left">
-                  About Infinity Hospitality
+                  About Organise My Trip
                 </button>
               </li>
               <li>
@@ -306,10 +306,10 @@ export const Footer: React.FC = () => {
         {/* SEO Blurb as per requirements */}
         <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800/80 text-slate-400 text-xs leading-relaxed space-y-2.5">
           <p className="font-semibold text-slate-200">
-            About Infinity Hospitality - Rajasthan Experiences · Jaipur, Rajasthan, India
+            About Organise My Trip - Rajasthan Experiences · Jaipur, Rajasthan, India
           </p>
           <p>
-            Welcome to Infinity Hospitality, your local Rajasthan travel specialist. Our Rajasthan Curated Tour Collection features 8 promotional, ready-to-sell itineraries across Jaipur, Pushkar, Ranthambhore, Udaipur, Jawai, Jodhpur, Jaisalmer and Bikaner — covering Heritage, Wildlife, Lakes, Desert and Luxury.
+            Welcome to Organise My Trip, your local Rajasthan travel specialist. Our Rajasthan Curated Tour Collection features 8 promotional, ready-to-sell itineraries across Jaipur, Pushkar, Ranthambhore, Udaipur, Jawai, Jodhpur, Jaisalmer and Bikaner — covering Heritage, Wildlife, Lakes, Desert and Luxury.
           </p>
           <p>
             Every circuit can be customised by hotel category (3*/4*/5*), vehicle, meal plan (breakfast or MAP), safari availability and travel dates. Make your Rajasthan journey your way — private tours, family holidays, honeymoons, luxury escapes, corporate groups and destination weddings. Rates, hotel availability, safari permits and sightseeing access are date-dependent; final quotations are prepared after confirming travel dates, pax, rooming and hotel category.
@@ -319,7 +319,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Copyright & Legal Links */}
         <div className="pt-8 mt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
           <div>
-            © 2026 Infinity Hospitality · Jaipur · Rajasthan · India. All rights reserved. Make your Rajasthan journey your way.
+            © 2026 Organise My Trip · Jaipur · Rajasthan · India. All rights reserved. Make your Rajasthan journey your way.
           </div>
 
           <div className="flex flex-wrap items-center gap-4 text-xs">

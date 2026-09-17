@@ -15,13 +15,13 @@ export const AboutUsPage: React.FC = () => {
           <div className="relative z-10 max-w-3xl space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Infinity Hospitality · Rajasthan Experiences</span>
+              <span>Organise My Trip · Rajasthan Experiences</span>
             </div>
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-serif">
-              About Infinity Hospitality
+              About Organise My Trip
             </h1>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Based in Jaipur, Rajasthan, India — Infinity Hospitality curates ready-to-sell Rajasthan circuits built on a simple belief: genuine travel in the Land of Kings should be intimate, flexible, and transparently priced.
+              Based in Jaipur, Rajasthan, India — Organise My Trip curates ready-to-sell Rajasthan circuits built on a simple belief: genuine travel in the Land of Kings should be intimate, flexible, and transparently priced.
             </p>
           </div>
         </div>
@@ -30,7 +30,7 @@ export const AboutUsPage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
             <h2 className="text-2xl font-bold font-serif text-slate-900">
-              Travel with Infinity Hospitality
+              Travel with Organise My Trip
             </h2>
             <p>
               Our <strong>Rajasthan Curated Tour Collection</strong> features 8 promotional itineraries covering Heritage, Wildlife, Lakes, Desert and Luxury — from a 7-day Royal Rajasthan Highlights circuit to the 14-day Ultimate Rajasthan Experience.
@@ -62,7 +62,7 @@ export const AboutUsPage: React.FC = () => {
           <div className="aspect-4/3 rounded-3xl overflow-hidden shadow-lg border border-stone-200">
             <img
               src="images/packages/jaipur-amber-fort.jpg"
-              alt="Infinity Hospitality Rajasthan Experiences"
+              alt="Organise My Trip Rajasthan Experiences"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
