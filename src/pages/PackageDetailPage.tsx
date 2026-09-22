@@ -265,23 +265,14 @@ export const PackageDetailPage: React.FC = () => {
             <div className="bg-white p-6 rounded-3xl border border-stone-200 shadow-xl space-y-5">
               <div>
                 <span className="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">
-                  Direct Local Operator Fare
+                  Direct Local Operator
                 </span>
                 <div className="flex items-baseline gap-2 mt-0.5">
-                  {pkg.startingPrice ? (
-                    <>
-                      <span className="text-3xl font-bold font-serif text-slate-900">
-                        ₹{pkg.startingPrice.toLocaleString('en-IN')}
-                      </span>
-                      <span className="text-xs text-slate-500">/ person</span>
-                    </>
-                  ) : (
-                    <span className="text-2xl font-bold font-serif text-amber-700">Price on Request</span>
-                  )}
+                  <span className="text-2xl font-bold font-serif text-amber-700">Price on Request</span>
                 </div>
                 <p className="text-[11px] text-amber-700 font-medium mt-1 flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5" />
-                  <span>Date-Dependent Rates · Customisable by Hotel & Meal Plan</span>
+                  <span>Date-Dependent Quotation · Customisable by Hotel & Meal Plan</span>
                 </p>
               </div>
 
@@ -354,11 +345,7 @@ export const PackageDetailPage: React.FC = () => {
                     </h3>
                     <p className="text-xs text-slate-500 line-clamp-1">{rp.route}</p>
                     <div className="pt-2 flex justify-between items-center text-xs">
-                      {rp.startingPrice ? (
-                        <strong className="text-slate-900">₹{rp.startingPrice.toLocaleString('en-IN')}</strong>
-                      ) : (
-                        <strong className="text-amber-700">Price on Request</strong>
-                      )}
+                      <strong className="text-amber-700">Price on Request</strong>
                       <span className="text-amber-800 font-bold text-[11px]">View Tour →</span>
                     </div>
                   </div>

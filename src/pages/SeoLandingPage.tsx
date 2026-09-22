@@ -39,7 +39,7 @@ export const SeoLandingPage: React.FC = () => {
                 Duration: <strong className="text-amber-300">{landing.targetDuration}</strong>
               </div>
               <div className="bg-white/10 px-3 py-1.5 rounded-lg border border-white/10">
-                Starting: <strong className="text-amber-300">{landing.startingPrice ? `₹${landing.startingPrice.toLocaleString('en-IN')}/person` : 'On Request (Date-Dependent)'}</strong>
+                Pricing: <strong className="text-amber-300">On Request (Date-Dependent)</strong>
               </div>
             </div>
           </div>
@@ -95,11 +95,7 @@ export const SeoLandingPage: React.FC = () => {
                       </h4>
                       <p className="text-xs text-slate-500 line-clamp-1 grow">{pkg.route}</p>
                       <div className="pt-2 border-t border-stone-100 flex justify-between items-center text-xs">
-                        {pkg.startingPrice ? (
-                          <strong className="text-slate-900">₹{pkg.startingPrice.toLocaleString('en-IN')}</strong>
-                        ) : (
-                          <strong className="text-amber-700">Price on Request</strong>
-                        )}
+                        <strong className="text-amber-700">Price on Request</strong>
                         <span className="text-amber-800 font-bold text-[11px]">View Details →</span>
                       </div>
                     </div>

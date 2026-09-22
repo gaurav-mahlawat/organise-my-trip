@@ -28,7 +28,7 @@ export const TaxiRouteDetailPage: React.FC = () => {
 
       {/* Header */}
       <div className="bg-slate-950 text-white py-12 relative overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url('images/taxi/taxi-hero.webp')` }} />
+        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url('images/taxi/etios.webp')` }} />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-950/60" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold border border-amber-500/30">
@@ -89,34 +89,34 @@ export const TaxiRouteDetailPage: React.FC = () => {
               )}
             </div>
 
-            {/* Vehicle Fares Comparison */}
+            {/* Vehicle Options */}
             <div className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200 shadow-xs space-y-4">
               <h3 className="text-lg font-bold font-serif text-slate-900">
-                Fixed Vehicle Rates for {route.fromCity} to {route.toCity}
+                Vehicle Options for {route.fromCity} to {route.toCity}
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 rounded-xl border border-stone-200 bg-stone-50 space-y-1">
                   <span className="text-[10px] text-slate-500 uppercase font-bold">Sedan (Dzire / Etios)</span>
-                  <div className="text-2xl font-bold font-serif text-slate-900">₹{route.sedanFare.toLocaleString('en-IN')}</div>
-                  <p className="text-[11px] text-slate-500">Max 4 Passengers · 2 Bags</p>
+                  <div className="text-lg font-bold font-serif text-slate-900">Max 4 Passengers · 2 Bags</div>
+                  <p className="text-[11px] text-slate-500">Quotation on request</p>
                 </div>
 
                 <div className="p-4 rounded-xl border border-stone-200 bg-stone-50 space-y-1">
                   <span className="text-[10px] text-slate-500 uppercase font-bold">Family SUV (Maruti Ertiga)</span>
-                  <div className="text-2xl font-bold font-serif text-slate-900">₹{route.suvFare.toLocaleString('en-IN')}</div>
-                  <p className="text-[11px] text-slate-500">Max 6 Passengers · 4 Bags</p>
+                  <div className="text-lg font-bold font-serif text-slate-900">Max 6 Passengers · 4 Bags</div>
+                  <p className="text-[11px] text-slate-500">Quotation on request</p>
                 </div>
 
                 <div className="p-4 rounded-xl border border-amber-300 bg-amber-50/50 space-y-1">
                   <span className="text-[10px] text-amber-800 uppercase font-bold">Executive Innova Crysta</span>
-                  <div className="text-2xl font-bold font-serif text-amber-950">₹{route.crystaFare.toLocaleString('en-IN')}</div>
-                  <p className="text-[11px] text-slate-500">Captain Seats · Ultra Smooth Ride</p>
+                  <div className="text-lg font-bold font-serif text-amber-950">Captain Seats · Ultra Smooth Ride</div>
+                  <p className="text-[11px] text-slate-500">Quotation on request</p>
                 </div>
 
                 <div className="p-4 rounded-xl border border-stone-200 bg-stone-50 space-y-1">
                   <span className="text-[10px] text-slate-500 uppercase font-bold">Tempo Traveller</span>
-                  <div className="text-2xl font-bold font-serif text-slate-900">₹{route.tempoFare.toLocaleString('en-IN')}</div>
-                  <p className="text-[11px] text-slate-500">12 - 16 Passengers · Dedicated Luggage</p>
+                  <div className="text-lg font-bold font-serif text-slate-900">12 - 16 Passengers · Dedicated Luggage</div>
+                  <p className="text-[11px] text-slate-500">Quotation on request</p>
                 </div>
               </div>
 

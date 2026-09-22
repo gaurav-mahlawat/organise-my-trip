@@ -122,7 +122,6 @@ export const RouterProvider: React.FC<{ children: React.ReactNode }> = ({ childr
 
   const navigate = (to: string) => {
     const cleanTo = to.startsWith('/') ? to : `/${to}`;
-    window.history.pushState(null, '', cleanTo);
     window.location.hash = cleanTo;
     setRoute(parseRoute(cleanTo));
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -205,7 +204,9 @@ export const RouterProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     if (seg0 === 'blog') {
       return segments[1] ? 'blog-post' : 'blog-index';
     }
-    if (seg0 === 'tour-by-destination') return 'destination-guide';
+    if (seg0 === 'tour-by-destination') {
+      return segments[1] ? 'destination-guide' : 'destinations-hub';
+    }
     if (seg0 === 'attraction') return 'sightseeing';
     if (seg0 === 'b2b-rajasthan-dmc') return 'b2b-dmc';
     if (seg0 === 'about-us' || seg0 === 'rajasthan-inbound-tour-operator') return 'about-us';

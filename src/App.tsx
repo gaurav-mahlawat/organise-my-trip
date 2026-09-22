@@ -17,6 +17,7 @@ import { CarRentalPage } from './pages/CarRentalPage';
 import { BlogIndexPage } from './pages/BlogIndexPage';
 import { BlogPostPage } from './pages/BlogPostPage';
 import { DestinationGuidePage } from './pages/DestinationGuidePage';
+import { DestinationHubPage } from './pages/DestinationHubPage';
 import { SightseeingPage } from './pages/SightseeingPage';
 import { B2bDmcPage } from './pages/B2bDmcPage';
 import { AboutUsPage } from './pages/AboutUsPage';
@@ -67,6 +68,9 @@ const AppContent: React.FC = () => {
 
       case 'destination-guide':
         return <DestinationGuidePage />;
+
+      case 'destinations-hub':
+        return <DestinationHubPage />;
 
       case 'sightseeing':
         return <SightseeingPage />;

@@ -13,7 +13,7 @@ export const TaxiOverviewPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Header */}
         <div className="bg-gradient-to-r from-slate-900 via-amber-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
-          <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url('images/taxi/taxi-hero.webp')` }} />
+          <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url('images/taxi/sedan.png')` }} />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-amber-950/75 to-slate-900/90" />
           <div className="relative z-10 max-w-3xl space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold">
@@ -24,7 +24,7 @@ export const TaxiOverviewPage: React.FC = () => {
               Rajasthan Taxi & Chauffeur Services
             </h1>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Clean air-conditioned tourist vehicles, polite English/Hindi speaking drivers, FASTag express toll payment, and fixed transparent tariffs with zero hidden charges.
+              Clean air-conditioned tourist vehicles, polite English/Hindi speaking drivers, FASTag express toll payment, and transparent service with zero hidden charges.
             </p>
           </div>
         </div>
@@ -56,7 +56,7 @@ export const TaxiOverviewPage: React.FC = () => {
 
                 <div className="bg-stone-50 p-3 rounded-xl border border-stone-100 flex items-center justify-between text-xs">
                   <span>Capacity: <strong>{veh.seatingCapacity} Pax</strong></span>
-                  <span className="text-amber-800 font-bold text-sm">₹{veh.ratePerKm}/km</span>
+                  <span className="text-amber-800 font-bold text-sm">Quote on Request</span>
                 </div>
 
                 <ul className="text-xs text-slate-600 space-y-1.5 grow">
@@ -83,7 +83,7 @@ export const TaxiOverviewPage: React.FC = () => {
         <div className="space-y-6">
           <div className="flex justify-between items-center">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">Transparent Fares</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">Popular Routes</span>
               <h2 className="text-2xl font-bold font-serif text-slate-900">Popular Intercity Taxi Routes</h2>
             </div>
             <button
@@ -120,7 +120,7 @@ export const TaxiOverviewPage: React.FC = () => {
                 <div className="pt-3 border-t border-stone-100 flex items-center justify-between">
                   <div>
                     <span className="text-[10px] text-slate-400 block">Sedan from</span>
-                    <span className="text-base font-bold text-slate-900">₹{route.sedanFare.toLocaleString('en-IN')}</span>
+                    <span className="text-base font-bold text-slate-900">Quote on Request</span>
                   </div>
                   <button
                     onClick={() => navigate(`/taxi-service/${route.slug}`)}

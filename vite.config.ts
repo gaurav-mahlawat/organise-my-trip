@@ -25,5 +25,18 @@ export default defineConfig(() => {
         },
       },
     },
+    configureServer(server) {
+      // Rewrite relative asset requests (images/..., assets/...) coming from
+      // nested SPA routes to the base path so they resolve in dev, mirroring
+      // the production server.js rewrite middleware.
+      server.middlewares.use((req, _res, next) => {
+        const url = req.url || '';
+        const m = url.match(/^\/(?:organise-my-trip\/)?[\w-]+(?:\/[\w-]+)*\/((?:images|assets)\/.+)$/);
+        if (m) {
+          req.url = `/organise-my-trip/${m[1]}`;
+        }
+        next();
+      });
+    },
   };
 });

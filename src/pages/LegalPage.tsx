@@ -38,7 +38,7 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
                   <li><button onClick={() => navigate('/packages')} className="hover:text-amber-800">Tour Packages Hub</button></li>
                   <li><button onClick={() => navigate('/activities')} className="hover:text-amber-800">Experiences & Activities</button></li>
                   <li><button onClick={() => navigate('/taxi-service')} className="hover:text-amber-800">Rajasthan Taxi Service</button></li>
-                  <li><button onClick={() => navigate('/rajasthan-tour-taxi')} className="hover:text-amber-800">Taxi Fare Directory</button></li>
+                  <li><button onClick={() => navigate('/rajasthan-tour-taxi')} className="hover:text-amber-800">Taxi Route Directory</button></li>
                   <li><button onClick={() => navigate('/rajasthan-car-rental')} className="hover:text-amber-800">Car Rental with Driver</button></li>
                   <li><button onClick={() => navigate('/blog')} className="hover:text-amber-800">Travel Guide & Blog</button></li>
                   <li><button onClick={() => navigate('/b2b-rajasthan-dmc')} className="hover:text-amber-800">B2B DMC Travel Desk</button></li>

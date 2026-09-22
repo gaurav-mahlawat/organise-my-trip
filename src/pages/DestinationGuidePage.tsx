@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouter } from '../context/RouterContext';
 import { useData } from '../context/DataContext';
 import { EnquiryForm } from '../components/common/EnquiryForm';
-import { MapPin, Calendar, Plane, Train, Clock, ArrowRight, Sparkles, Check, Car } from 'lucide-react';
+import { Calendar, Plane, Train, Clock, ArrowRight, Sparkles } from 'lucide-react';
 
 export const DestinationGuidePage: React.FC = () => {
   const { params, navigate } = useRouter();
@@ -10,16 +10,30 @@ export const DestinationGuidePage: React.FC = () => {
   const slug = params.slug || 'jaipur';
 
   const dest = DESTINATIONS.find(d => d.slug === slug) || DESTINATIONS[0];
+  if (!dest) {
+    return (
+      <div className="w-full py-20 text-center text-slate-600">
+        <p className="font-serif text-xl font-bold text-slate-900">Destination not found</p>
+        <button onClick={() => navigate('/')} className="mt-4 text-amber-800 font-bold text-sm">Back to Home →</button>
+      </div>
+    );
+  }
 
-  const packagesCoveringCity = TOUR_PACKAGES.filter(p => 
-    p.citiesCovered.some(c => c.toLowerCase().includes(dest.name.toLowerCase()))
+  const tagline = dest.tagline || dest.nickname;
+  const bestMonths = dest.bestMonths || dest.bestTimeToVisit;
+  const attractions = dest.attractions || dest.topAttractions || [];
+
+  const packagesCoveringCity = TOUR_PACKAGES.filter(p =>
+    (p.citiesCovered ?? p.destinations ?? []).some(c => c.toLowerCase().includes(dest.name.toLowerCase()))
   ).slice(0, 3);
+
+  const otherDestinations = DESTINATIONS.filter(d => d.slug !== dest.slug).slice(0, 8);
 
   return (
     <div className="w-full bg-stone-50 pb-20">
       {/* Hero Header */}
       <div className="bg-slate-950 text-white py-14 lg:py-20 relative overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center opacity-40 scale-105"
           style={{ backgroundImage: `url('${dest.image}')` }}
         />
@@ -28,7 +42,7 @@ export const DestinationGuidePage: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold backdrop-blur-xs">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>{dest.tagline}</span>
+            <span>{tagline}</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold font-serif text-white">
@@ -40,18 +54,30 @@ export const DestinationGuidePage: React.FC = () => {
           </p>
 
           <div className="flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-slate-300 pt-2">
-            <div className="flex items-center gap-1.5">
-              <Calendar className="w-4 h-4 text-amber-400" />
-              <span>Best Months: <strong>{dest.bestMonths}</strong></span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <Clock className="w-4 h-4 text-amber-400" />
-              <span>Ideal Stay: <strong>{dest.idealDays}</strong></span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <Plane className="w-4 h-4 text-amber-400" />
-              <span>Airport: <strong>{dest.connectivity.airport}</strong></span>
-            </div>
+            {bestMonths && (
+              <div className="flex items-center gap-1.5">
+                <Calendar className="w-4 h-4 text-amber-400" />
+                <span>Best Months: <strong>{bestMonths}</strong></span>
+              </div>
+            )}
+            {dest.idealDays && (
+              <div className="flex items-center gap-1.5">
+                <Clock className="w-4 h-4 text-amber-400" />
+                <span>Ideal Stay: <strong>{dest.idealDays}</strong></span>
+              </div>
+            )}
+            {dest.connectivity?.airport && (
+              <div className="flex items-center gap-1.5">
+                <Plane className="w-4 h-4 text-amber-400" />
+                <span>Airport: <strong>{dest.connectivity.airport}</strong></span>
+              </div>
+            )}
+            {dest.connectivity?.railway && (
+              <div className="flex items-center gap-1.5">
+                <Train className="w-4 h-4 text-amber-400" />
+                <span>Rail: <strong>{dest.connectivity.railway}</strong></span>
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -70,13 +96,13 @@ export const DestinationGuidePage: React.FC = () => {
                     Top Sightseeing Attractions in {dest.name}
                   </h2>
                 </div>
-                <span className="text-xs text-slate-500">{dest.attractions.length} Places</span>
+                <span className="text-xs text-slate-500">{attractions.length} Places</span>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {dest.attractions.map((att) => (
+                {attractions.map((att) => (
                   <div
-                    key={att.id}
+                    key={att.id || att.slug}
                     onClick={() => navigate(`/attraction/${dest.slug}/${att.slug}`)}
                     className="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-xs hover:shadow-lg transition-all cursor-pointer group flex flex-col"
                   >
@@ -98,7 +124,7 @@ export const DestinationGuidePage: React.FC = () => {
                         {att.name}
                       </h3>
                       <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed grow">
-                        {att.description}
+                        {att.shortDescription || att.description}
                       </p>
                       <div className="pt-2 border-t border-stone-100 flex justify-between items-center text-xs">
                         <span className="text-slate-400 text-[11px]">Entry: {att.entryFee}</span>
@@ -130,15 +156,37 @@ export const DestinationGuidePage: React.FC = () => {
                         {pkg.title}
                       </h4>
                       <div className="flex justify-between items-center text-xs pt-1 border-t border-stone-100">
-                        {pkg.startingPrice ? (
-                          <strong className="text-slate-900">₹{pkg.startingPrice.toLocaleString('en-IN')}</strong>
-                        ) : (
-                          <strong className="text-amber-700">On Request</strong>
-                        )}
+                        <strong className="text-amber-700">Price on Request</strong>
                         <span className="text-amber-800 font-bold text-[11px]">View →</span>
                       </div>
                     </div>
                   ))}
+                </div>
+              </div>
+            )}
+
+            {/* Other destinations to explore */}
+            {otherDestinations.length > 0 && (
+              <div className="space-y-4 pt-6 border-t border-stone-200">
+                <h3 className="text-xl font-bold font-serif text-slate-900">
+                  Explore More Rajasthan Destinations
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {otherDestinations.map((d) => (
+                    <button
+                      key={d.id}
+                      onClick={() => navigate(`/tour-by-destination/${d.slug}`)}
+                      className="px-3.5 py-1.5 rounded-full bg-white border border-stone-200 text-xs font-semibold text-slate-700 hover:bg-amber-50 hover:text-amber-800 hover:border-amber-200 transition-colors"
+                    >
+                      {d.name}
+                    </button>
+                  ))}
+                  <button
+                    onClick={() => navigate('/tour-by-destination')}
+                    className="px-3.5 py-1.5 rounded-full bg-amber-600 text-white text-xs font-bold hover:bg-amber-700 transition-colors flex items-center gap-1"
+                  >
+                    All 9 Guides <ArrowRight className="w-3 h-3" />
+                  </button>
                 </div>
               </div>
             )}

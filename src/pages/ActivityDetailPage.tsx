@@ -112,13 +112,12 @@ export const ActivityDetailPage: React.FC = () => {
             <div className="bg-white p-6 rounded-3xl border border-stone-200 shadow-xl space-y-5">
               <div>
                 <span className="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">
-                  Rate Per Person
+                  Private Experience
                 </span>
                 <div className="flex items-baseline gap-2 mt-0.5">
                   <span className="text-3xl font-bold font-serif text-slate-900">
-                    ₹{act.pricePerPerson.toLocaleString('en-IN')}
+                    Quote on Request
                   </span>
-                  <span className="text-xs text-slate-500">all inclusive</span>
                 </div>
               </div>
 

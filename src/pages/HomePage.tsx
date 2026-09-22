@@ -14,7 +14,6 @@ import {
   Check, 
   Calendar, 
   Phone, 
-  MessageCircle, 
   Sparkles, 
   Compass, 
   HelpCircle,
@@ -39,20 +38,9 @@ export const HomePage: React.FC = () => {
   const [packageCategory, setPackageCategory] = useState<string>('All');
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
-  // Quick Trip Estimator state
-  const [calcDays, setCalcDays] = useState(7);
-  const [calcTravelers, setCalcTravelers] = useState(2);
-  const [calcTier, setCalcTier] = useState<'budget' | 'deluxe' | 'luxury'>('deluxe');
-
   const filteredPackages = packageCategory === 'All' 
     ? TOUR_PACKAGES.slice(0, 6) 
     : TOUR_PACKAGES.filter(p => p.category === packageCategory).slice(0, 6);
-
-  // Approximate cost calculation
-  const getEstimatedCost = () => {
-    const basePerDay = calcTier === 'budget' ? 3200 : calcTier === 'deluxe' ? 5200 : 9800;
-    return Math.round(basePerDay * calcDays * (calcTravelers > 2 ? 1 + (calcTravelers - 2) * 0.35 : 1));
-  };
 
   const FAQS = [
     {
@@ -198,7 +186,7 @@ export const HomePage: React.FC = () => {
               </p>
             </div>
             <button 
-              onClick={() => navigate('/tour-by-destination/jaipur')}
+              onClick={() => navigate('/tour-by-destination')}
               className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-900 group"
             >
               <span>Explore All 9 Guides</span>
@@ -346,15 +334,8 @@ export const HomePage: React.FC = () => {
                   {/* Pricing & CTA */}
                   <div className="pt-3 border-t border-stone-100 flex items-center justify-between">
                     <div>
-                      <span className="text-[10px] text-slate-400 uppercase font-semibold block">Starting from</span>
-                      <div className="flex items-baseline gap-1">
-                        {pkg.startingPrice ? (
-                          <span className="text-lg font-bold text-slate-900">₹{pkg.startingPrice.toLocaleString('en-IN')}</span>
-                        ) : (
-                          <span className="text-sm font-bold text-amber-700">Price on Request</span>
-                        )}
-                        {pkg.startingPrice && <span className="text-[10px] text-slate-500">/ person</span>}
-                      </div>
+                      <span className="text-[10px] text-slate-400 uppercase font-semibold block">Custom Quotation</span>
+                      <span className="text-sm font-bold text-amber-700">Price on Request</span>
                     </div>
 
                     <div className="flex items-center gap-2">
@@ -401,7 +382,7 @@ export const HomePage: React.FC = () => {
                 Reliable Rajasthan Intercity Taxi Service
               </h2>
               <p className="text-sm text-slate-300">
-                Travel comfortably between major royal cities. Clean sanitised cars, polite English/Hindi speaking drivers, FASTag express toll payment, and fixed transparent tariffs.
+                Travel comfortably between major royal cities. Clean sanitised cars, polite English/Hindi speaking drivers, FASTag express toll payment, and hassle-free bookings.
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -446,7 +427,7 @@ export const HomePage: React.FC = () => {
 
                 <div className="text-xs text-slate-300 flex items-center justify-between border-t border-slate-700/60 pt-2">
                   <span>Seats: <strong>{veh.seatingCapacity} Pax</strong></span>
-                  <span>Rate: <strong className="text-amber-400">₹{veh.ratePerKm}/km</strong></span>
+                  <span>AC: <strong className="text-amber-400">{veh.ac ? 'Yes' : 'No'}</strong></span>
                 </div>
 
                 <ul className="text-[11px] text-slate-400 space-y-1 grow">
@@ -473,9 +454,8 @@ export const HomePage: React.FC = () => {
             <div className="p-4 sm:p-5 border-b border-slate-700 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
               <h3 className="text-sm font-bold text-white flex items-center gap-2">
                 <Car className="w-4 h-4 text-amber-400" />
-                <span>Popular Intercity Taxi Routes & Fixed Fares</span>
+                <span>Popular Intercity Taxi Routes</span>
               </h3>
-              <span className="text-[11px] text-slate-400">All prices include Toll, State Tax & Driver Allowance</span>
             </div>
 
             <div className="overflow-x-auto">
@@ -484,9 +464,6 @@ export const HomePage: React.FC = () => {
                   <tr>
                     <th className="p-3.5">Route</th>
                     <th className="p-3.5">Distance & Duration</th>
-                    <th className="p-3.5">Sedan (Dzire)</th>
-                    <th className="p-3.5">SUV (Ertiga)</th>
-                    <th className="p-3.5">Innova Crysta</th>
                     <th className="p-3.5 text-right">Action</th>
                   </tr>
                 </thead>
@@ -504,9 +481,6 @@ export const HomePage: React.FC = () => {
                       <td className="p-3.5 text-slate-300">
                         {route.distanceKm} km · {route.durationHours}
                       </td>
-                      <td className="p-3.5 font-bold text-amber-300">₹{route.sedanFare.toLocaleString('en-IN')}</td>
-                      <td className="p-3.5 font-bold text-amber-300">₹{route.suvFare.toLocaleString('en-IN')}</td>
-                      <td className="p-3.5 font-bold text-amber-300">₹{route.crystaFare.toLocaleString('en-IN')}</td>
                       <td className="p-3.5 text-right">
                         <button
                           onClick={() => openEnquiryModal({ 
@@ -587,10 +561,7 @@ export const HomePage: React.FC = () => {
                     {act.description}
                   </p>
                   <div className="pt-2 border-t border-stone-100 flex items-center justify-between text-xs">
-                    <div>
-                      <span className="text-[10px] text-slate-400 block">From</span>
-                      <strong className="text-slate-900 font-bold">₹{act.pricePerPerson.toLocaleString('en-IN')}</strong>
-                    </div>
+                    <span className="text-[10px] text-slate-400">Price on Request</span>
                     <span className="text-amber-700 font-bold text-[11px] group-hover:translate-x-0.5 transition-transform">
                       View Details →
                     </span>
@@ -602,125 +573,23 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 7. INTERACTIVE TRIP ESTIMATOR & CUSTOM FORM (Section 9) */}
+      {/* 7. CUSTOM TRIP ENQUIRY FORM (Section 9) */}
       <section className="py-16 sm:py-20 bg-white" id="plan-trip">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-            {/* Left Col: Trip Estimator Calculator */}
-            <div className="lg:col-span-5 bg-gradient-to-br from-slate-900 to-amber-950 text-white p-6 sm:p-8 rounded-3xl shadow-xl space-y-6">
-              <div className="space-y-1">
-                <span className="text-xs font-bold text-amber-400 uppercase tracking-wider block">
-                  Quick Cost Estimator
-                </span>
-                <h3 className="text-2xl font-bold font-serif">
-                  Estimate Your Rajasthan Holiday
-                </h3>
-                <p className="text-xs text-slate-300">
-                  Instant realistic budget range based on verified local hotel and cab rates.
-                </p>
-              </div>
-
-              {/* Sliders */}
-              <div className="space-y-4">
-                <div>
-                  <div className="flex justify-between text-xs font-medium mb-1">
-                    <span>Trip Duration:</span>
-                    <strong className="text-amber-400">{calcDays} Days / {calcDays - 1} Nights</strong>
-                  </div>
-                  <input
-                    type="range"
-                    min="3"
-                    max="16"
-                    value={calcDays}
-                    onChange={e => setCalcDays(Number(e.target.value))}
-                    className="w-full accent-amber-500 cursor-pointer"
-                  />
-                </div>
-
-                <div>
-                  <div className="flex justify-between text-xs font-medium mb-1">
-                    <span>Number of Travelers:</span>
-                    <strong className="text-amber-400">{calcTravelers} Persons</strong>
-                  </div>
-                  <input
-                    type="range"
-                    min="1"
-                    max="12"
-                    value={calcTravelers}
-                    onChange={e => setCalcTravelers(Number(e.target.value))}
-                    className="w-full accent-amber-500 cursor-pointer"
-                  />
-                </div>
-
-                <div>
-                  <label className="text-xs font-medium block mb-1">Accommodation Tier:</label>
-                  <div className="grid grid-cols-3 gap-2">
-                    {[
-                      { id: 'budget', label: '3★ Comfort' },
-                      { id: 'deluxe', label: '4★ Deluxe' },
-                      { id: 'luxury', label: '5★ Heritage' }
-                    ].map((t) => (
-                      <button
-                        key={t.id}
-                        type="button"
-                        onClick={() => setCalcTier(t.id as any)}
-                        className={`py-2 text-xs font-bold rounded-lg transition-all ${
-                          calcTier === t.id
-                            ? 'bg-amber-500 text-slate-950 shadow-xs'
-                            : 'bg-white/10 text-slate-200 hover:bg-white/20'
-                        }`}
-                      >
-                        {t.label}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Estimate Box */}
-              <div className="p-4 bg-white/10 rounded-2xl border border-white/10 space-y-1">
-                <span className="text-[11px] text-slate-300 uppercase tracking-wide font-medium">
-                  Estimated Total Package Range
-                </span>
-                <div className="text-3xl font-bold font-serif text-amber-300">
-                  ₹{getEstimatedCost().toLocaleString('en-IN')}
-                  <span className="text-xs text-slate-300 font-normal ml-2">approx for {calcTravelers} travelers</span>
-                </div>
-                <p className="text-[11px] text-slate-300 leading-tight">
-                  Includes private AC taxi, {calcTier === 'luxury' ? 'royal palace stays' : 'verified boutique hotels'}, daily breakfast & tour concierge.
-                </p>
-              </div>
-
-              {/* CTA */}
-              <div className="pt-2">
-                <a
-                  href={getWhatsAppLink(`Hi Organise My Trip, I calculated an estimate of ₹${getEstimatedCost()} for ${calcDays} days and ${calcTravelers} travelers (${calcTier} tier). Please share options!`)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold flex items-center justify-center gap-2 transition-colors shadow-md"
-                >
-                  <MessageCircle className="w-4 h-4" />
-                  <span>Send This Estimate to Expert on WhatsApp</span>
-                </a>
-              </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-stone-50 p-6 sm:p-8 rounded-3xl border border-stone-200 space-y-4">
+            <div className="space-y-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
+                Tailor-Made Tour Consultation
+              </span>
+              <h3 className="text-2xl font-bold font-serif text-slate-900">
+                Request a Free Custom Rajasthan Quotation
+              </h3>
+              <p className="text-xs text-slate-600">
+                Fill in your preferred dates and requirements. Our senior trip planners will craft your custom itinerary within 15–30 minutes.
+              </p>
             </div>
 
-            {/* Right Col: Full Custom Trip Enquiry Form */}
-            <div className="lg:col-span-7 bg-stone-50 p-6 sm:p-8 rounded-3xl border border-stone-200 space-y-4">
-              <div className="space-y-1">
-                <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
-                  Tailor-Made Tour Consultation
-                </span>
-                <h3 className="text-2xl font-bold font-serif text-slate-900">
-                  Request a Free Custom Rajasthan Quotation
-                </h3>
-                <p className="text-xs text-slate-600">
-                  Fill in your preferred dates and requirements. Our senior trip planners will craft your custom itinerary within 15–30 minutes.
-                </p>
-              </div>
-
-              <EnquiryForm formType="tour" />
-            </div>
+            <EnquiryForm formType="tour" />
           </div>
         </div>
       </section>

@@ -771,15 +771,12 @@ export const AdminPage: React.FC = () => {
                       <tr key={item.id} className="hover:bg-stone-50/60">
                         <td className="p-3 font-semibold text-slate-900">
                           {item[activeCollection.titleKey] || item.id}
-                          {activeCollection.key === 'packages' && item.startingPrice && (
-                            <span className="block text-[10px] text-amber-700 font-bold">₹{item.startingPrice.toLocaleString('en-IN')}</span>
-                          )}
                         </td>
                         <td className="p-3 font-mono text-[11px] text-slate-500">{item.slug || '—'}</td>
                         <td className="p-3 hidden md:table-cell text-[11px] text-slate-500 max-w-xs truncate">
                           {activeCollection.key === 'destinations' && `${item.nickname || ''} · ${item.tourCount || 0} tours`}
                           {activeCollection.key === 'packages' && `${item.durationDays || 0}D/${item.durationNights || 0}N · ${item.category || ''}`}
-                          {activeCollection.key === 'activities' && `${item.location || ''} · ₹${(item.pricePerPerson || 0).toLocaleString('en-IN')}`}
+                          {activeCollection.key === 'activities' && `${item.location || ''}`}
                           {activeCollection.key === 'blogs' && `${item.publishedDate || ''} · ${item.readTime || ''}`}
                           {activeCollection.key === 'taxiRoutes' && `${item.fromCity || ''} → ${item.toCity || ''} · ${item.distanceKm || 0} km`}
                           {activeCollection.key === 'taxiVehicles' && `${item.category || ''} · ${item.seatingCapacity || 0} seats`}

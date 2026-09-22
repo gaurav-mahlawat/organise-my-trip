@@ -116,9 +116,10 @@ if (fs.existsSync(DIST_PATH)) {
   app.use(express.static(DIST_PATH));
 
   // Relative asset paths (images/..., assets/...) resolved from nested SPA
-  // routes like /packages/images/x — rewrite to dist/<asset>.
+  // routes like /packages/images/x or /attraction/jaipur/images/x —
+  // rewrite to dist/<asset>.
   app.use((req, res, next) => {
-    const m = req.path.match(/^\/(?:organise-my-trip\/)?[\w-]+\/((?:images|assets)\/.+)$/);
+    const m = req.path.match(/^\/(?:organise-my-trip\/)?[\w-]+(?:\/[\w-]+)*\/((?:images|assets)\/.+)$/);
     if (m) {
       return res.sendFile(path.join(DIST_PATH, m[1]), err => { if (err) next(); });
     }

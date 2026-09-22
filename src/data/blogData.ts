@@ -109,7 +109,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: '4 min read',
     publishedDate: 'February 10, 2026',
     author: 'Organise My Trip Fleet Team',
-    image: 'images/taxi/taxi-hero-960.webp',
+    image: 'images/taxi/sedan.png',
     excerpt: 'How the Delhi-Mumbai Expressway has cut travel time between Delhi and Jaipur to just 3.5 hours. Toll costs, rest stops, speed limits, and cab advice.',
     content: [
       'The opening of the Delhi-Mumbai Expressway (NE-4) section connecting Sohna (Gurgaon) to Dausa/Jaipur has revolutionized road travel in north India.',

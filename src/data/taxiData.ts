@@ -11,7 +11,7 @@ export const TAXI_VEHICLES: TaxiVehicle[] = [
     ac: true,
     ratePerKm: 11,
     minKmPerDay: 250,
-    image: 'images/taxi/sedan.jpg',
+    image: 'images/taxi/sedan.png',
     features: ['Uniformed Chauffeur', 'Clean & Sanitized Interiors', 'Complimentary Bottled Water', 'Mobile Charging Ports', 'Music System']
   },
   {
@@ -24,7 +24,7 @@ export const TAXI_VEHICLES: TaxiVehicle[] = [
     ac: true,
     ratePerKm: 14,
     minKmPerDay: 250,
-    image: 'images/taxi/ertiga.jpg',
+    image: 'images/taxi/ertiga.png',
     features: ['Generous Legroom & Headroom', 'Rear AC Vents', 'Dual Airbags', 'Foldable Seats for Extra Luggage', 'Carrier on Roof on Request']
   },
   {
@@ -37,7 +37,7 @@ export const TAXI_VEHICLES: TaxiVehicle[] = [
     ac: true,
     ratePerKm: 18,
     minKmPerDay: 250,
-    image: 'images/taxi/ertiga-luggage.jpg',
+    image: 'images/taxi/etios.webp',
     features: ['Plush Reclining Captain Seats', 'Individual AC Climate Control', 'Ultra-Smooth Highway Ride', 'Senior Chauffeur with 10+ yrs exp', 'Express Toll Tag (FASTag)']
   },
   {
@@ -50,7 +50,7 @@ export const TAXI_VEHICLES: TaxiVehicle[] = [
     ac: true,
     ratePerKm: 26,
     minKmPerDay: 300,
-    image: 'images/taxi/taxi-hero-960.webp',
+    image: 'images/taxi/tempo-traveller.png',
     features: ['Pushback Reclining Seats', 'High Ceiling Interior', 'Surround Audio & LCD Screen', 'Dedicated Luggage Boot', 'Ideal for Big Families & Groups']
   }
 ];

@@ -13,7 +13,7 @@ export const CarRentalPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Header */}
         <div className="bg-gradient-to-r from-slate-900 via-amber-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
-          <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url('images/taxi/ertiga.jpg')` }} />
+          <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url('images/taxi/ertiga.png')` }} />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-amber-950/75 to-slate-900/90" />
           <div className="relative z-10 max-w-3xl space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold">
@@ -33,7 +33,7 @@ export const CarRentalPage: React.FC = () => {
         <div className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200 shadow-xs space-y-6">
           <div className="space-y-1">
             <h2 className="text-xl font-bold font-serif text-slate-900">
-              Car Rental Tariff (Outstation & Local)
+              Car Rental Plans (Outstation & Local)
             </h2>
             <p className="text-xs text-slate-500">
               Standard outstation billing is 250 km minimum per calendar day. Local packages include 8 Hours / 80 Kilometers.
@@ -52,7 +52,7 @@ export const CarRentalPage: React.FC = () => {
                   <div className="pt-2 border-t border-stone-200 space-y-1 text-xs">
                     <div className="flex justify-between">
                       <span className="text-slate-500">Outstation:</span>
-                      <strong className="text-amber-800">₹{veh.ratePerKm} / km</strong>
+                      <strong className="text-amber-800">Quote on Request</strong>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-500">Min Outstation/Day:</span>
@@ -60,7 +60,7 @@ export const CarRentalPage: React.FC = () => {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-500">Local (8hr/80km):</span>
-                      <strong className="text-slate-900">₹{veh.ratePerKm * 120}</strong>
+                      <strong className="text-slate-900">Quote on Request</strong>
                     </div>
                   </div>
                 </div>

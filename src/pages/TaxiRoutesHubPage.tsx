@@ -20,18 +20,18 @@ export const TaxiRoutesHubPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         {/* Header */}
         <div className="bg-gradient-to-r from-slate-900 via-amber-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
-          <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url('images/taxi/taxi-hero-960.webp')` }} />
+          <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url('images/taxi/ertiga.png')` }} />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-amber-950/75 to-slate-900/90" />
           <div className="relative z-10 max-w-3xl space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold">
               <Car className="w-3.5 h-3.5" />
-              <span>Fixed Intercity Fares · No Hidden Surcharges</span>
+              <span>Verified Chauffeurs · No Hidden Surcharges</span>
             </div>
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-serif">
-              Rajasthan Intercity Taxi Fare Directory
+              Rajasthan Intercity Taxi Route Directory
             </h1>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Find transparent one-way and round-trip taxi fares across all major tourist corridors connecting Jaipur, Jodhpur, Udaipur, Jaisalmer, Delhi, and Agra.
+              Explore all major tourist corridors connecting Jaipur, Jodhpur, Udaipur, Jaisalmer, Delhi, and Agra. Share your route and travel dates for a quick custom quotation.
             </p>
           </div>
         </div>
@@ -61,10 +61,6 @@ export const TaxiRoutesHubPage: React.FC = () => {
                 <tr>
                   <th className="p-3.5">From → To Route</th>
                   <th className="p-3.5">Distance & Driving Time</th>
-                  <th className="p-3.5">Comfort Sedan</th>
-                  <th className="p-3.5">Maruti Ertiga SUV</th>
-                  <th className="p-3.5">Innova Crysta</th>
-                  <th className="p-3.5">Tempo (12-16 Pax)</th>
                   <th className="p-3.5 text-right">Action</th>
                 </tr>
               </thead>
@@ -83,10 +79,6 @@ export const TaxiRoutesHubPage: React.FC = () => {
                     <td className="p-3.5 text-slate-600">
                       {route.distanceKm} km · {route.durationHours}
                     </td>
-                    <td className="p-3.5 font-bold text-slate-900">₹{route.sedanFare.toLocaleString('en-IN')}</td>
-                    <td className="p-3.5 font-bold text-slate-900">₹{route.suvFare.toLocaleString('en-IN')}</td>
-                    <td className="p-3.5 font-bold text-amber-800">₹{route.crystaFare.toLocaleString('en-IN')}</td>
-                    <td className="p-3.5 font-bold text-slate-900">₹{route.tempoFare.toLocaleString('en-IN')}</td>
                     <td className="p-3.5 text-right">
                       <button
                         onClick={() => openEnquiryModal({ 
@@ -106,9 +98,9 @@ export const TaxiRoutesHubPage: React.FC = () => {
           </div>
 
           <div className="bg-amber-50/70 p-4 rounded-xl border border-amber-200 text-xs text-amber-900 space-y-1">
-            <span className="font-bold block">Fare Transparency Note:</span>
+            <span className="font-bold block">Service Note:</span>
             <p className="text-[11px] leading-relaxed">
-              All fares quoted above are 100% all-inclusive. They include toll expressway fees (FASTag), interstate tourist vehicle road tax, parking fees, driver night allowance, and fuel. No hidden meter surcharges or fuel escalations.
+              Quotations are prepared on request and include toll expressway fees (FASTag), interstate tourist vehicle road tax, parking fees, driver night allowance, and fuel. Share your route and travel dates with our team for a date-valid quote.
             </p>
           </div>
         </div>

@@ -10,7 +10,7 @@ export const PackagesHubPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [durationFilter, setDurationFilter] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [sortBy, setSortBy] = useState<'recommended' | 'price-asc' | 'price-desc' | 'duration'>('recommended');
+  const [sortBy, setSortBy] = useState<'recommended' | 'duration'>('recommended');
 
   const categories = ['All', 'Heritage & Forts', 'Wildlife & Safari', 'Desert & Safari', 'Luxury & Leisure', 'Family & Groups'];
 
@@ -40,11 +40,7 @@ export const PackagesHubPage: React.FC = () => {
       );
     }
 
-    if (sortBy === 'price-asc') {
-      list.sort((a, b) => (a.startingPrice ?? Infinity) - (b.startingPrice ?? Infinity));
-    } else if (sortBy === 'price-desc') {
-      list.sort((a, b) => (b.startingPrice ?? 0) - (a.startingPrice ?? 0));
-    } else if (sortBy === 'duration') {
+    if (sortBy === 'duration') {
       list.sort((a, b) => a.durationDays - b.durationDays);
     }
 
@@ -105,8 +101,6 @@ export const PackagesHubPage: React.FC = () => {
                   className="px-2.5 py-1.5 text-xs rounded-lg border border-stone-300 bg-stone-50 font-medium outline-none"
                 >
                   <option value="recommended">Recommended</option>
-                  <option value="price-asc">Price: Low to High</option>
-                  <option value="price-desc">Price: High to Low</option>
                   <option value="duration">Trip Duration</option>
                 </select>
               </div>
@@ -234,15 +228,8 @@ export const PackagesHubPage: React.FC = () => {
                 {/* Pricing & CTA */}
                 <div className="pt-3 border-t border-stone-100 flex items-center justify-between">
                   <div>
-                    <span className="text-[10px] text-slate-400 uppercase font-semibold block">Starting from</span>
-                    <div className="flex items-baseline gap-1">
-                      {pkg.startingPrice ? (
-                        <span className="text-lg font-bold text-slate-900">₹{pkg.startingPrice.toLocaleString('en-IN')}</span>
-                      ) : (
-                        <span className="text-sm font-bold text-amber-700">Price on Request</span>
-                      )}
-                      {pkg.startingPrice && <span className="text-[10px] text-slate-500">/ person</span>}
-                    </div>
+                    <span className="text-[10px] text-slate-400 uppercase font-semibold block">Custom Quotation</span>
+                    <span className="text-sm font-bold text-amber-700">Price on Request</span>
                   </div>
 
                   <div className="flex items-center gap-2">

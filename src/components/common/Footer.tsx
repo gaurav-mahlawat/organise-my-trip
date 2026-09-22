@@ -186,7 +186,7 @@ export const Footer: React.FC = () => {
                   onClick={() => navigate('/taxi-service/jaipur-to-jodhpur')} 
                   className="hover:text-amber-400 transition-colors text-left"
                 >
-                  Jaipur to Jodhpur Cab (from ₹3,850)
+                  Jaipur to Jodhpur Cab
                 </button>
               </li>
               <li>
@@ -194,7 +194,7 @@ export const Footer: React.FC = () => {
                   onClick={() => navigate('/taxi-service/jaipur-to-udaipur')} 
                   className="hover:text-amber-400 transition-colors text-left"
                 >
-                  Jaipur to Udaipur Cab (from ₹4,500)
+                  Jaipur to Udaipur Cab
                 </button>
               </li>
               <li>
@@ -202,7 +202,7 @@ export const Footer: React.FC = () => {
                   onClick={() => navigate('/taxi-service/delhi-to-jaipur')} 
                   className="hover:text-amber-400 transition-colors text-left"
                 >
-                  Delhi Airport to Jaipur Taxi (from ₹3,200)
+                  Delhi Airport to Jaipur Taxi
                 </button>
               </li>
               <li>
@@ -210,7 +210,7 @@ export const Footer: React.FC = () => {
                   onClick={() => navigate('/taxi-service/jaipur-to-agra')} 
                   className="hover:text-amber-400 transition-colors text-left"
                 >
-                  Jaipur to Agra Cab (from ₹2,900)
+                  Jaipur to Agra Cab
                 </button>
               </li>
               <li>
@@ -218,7 +218,7 @@ export const Footer: React.FC = () => {
                   onClick={() => navigate('/taxi-service/jodhpur-to-jaisalmer')} 
                   className="hover:text-amber-400 transition-colors text-left"
                 >
-                  Jodhpur to Jaisalmer Cab (from ₹3,400)
+                  Jodhpur to Jaisalmer Cab
                 </button>
               </li>
               <li>
@@ -226,7 +226,7 @@ export const Footer: React.FC = () => {
                   onClick={() => navigate('/taxi-service/jodhpur-to-udaipur')} 
                   className="hover:text-amber-400 transition-colors text-left"
                 >
-                  Jodhpur to Udaipur via Ranakpur (from ₹3,300)
+                  Jodhpur to Udaipur via Ranakpur
                 </button>
               </li>
               <li>
@@ -242,7 +242,7 @@ export const Footer: React.FC = () => {
                   onClick={() => navigate('/rajasthan-tour-taxi')} 
                   className="text-amber-400 font-semibold hover:underline flex items-center gap-1"
                 >
-                  Intercity Taxi Fare Search Hub →
+                  Intercity Taxi Route Directory →
                 </button>
               </li>
             </ul>
@@ -254,6 +254,11 @@ export const Footer: React.FC = () => {
               Destinations & Travel Guides
             </h3>
             <ul className="space-y-2 text-xs">
+              <li>
+                <button onClick={() => navigate('/tour-by-destination')} className="text-amber-400 font-semibold hover:underline text-left">
+                  All 9 Destination Guides →
+                </button>
+              </li>
               <li>
                 <button onClick={() => navigate('/tour-by-destination/jaipur')} className="hover:text-amber-400 text-left">
                   Jaipur (The Pink City) Guide

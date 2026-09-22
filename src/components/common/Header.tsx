@@ -229,19 +229,19 @@ export const Header: React.FC = () => {
                     onClick={() => { navigate('/taxi-service/jaipur-to-jodhpur'); setTaxiDropdown(false); }}
                     className="w-full text-left px-4 py-1.5 text-xs text-slate-600 hover:text-amber-800 hover:bg-slate-50"
                   >
-                    Jaipur to Jodhpur Cab (₹3,850)
+                    Jaipur to Jodhpur Cab
                   </button>
                   <button 
                     onClick={() => { navigate('/taxi-service/jaipur-to-udaipur'); setTaxiDropdown(false); }}
                     className="w-full text-left px-4 py-1.5 text-xs text-slate-600 hover:text-amber-800 hover:bg-slate-50"
                   >
-                    Jaipur to Udaipur Cab (₹4,500)
+                    Jaipur to Udaipur Cab
                   </button>
                   <button 
                     onClick={() => { navigate('/taxi-service/delhi-to-jaipur'); setTaxiDropdown(false); }}
                     className="w-full text-left px-4 py-1.5 text-xs text-slate-600 hover:text-amber-800 hover:bg-slate-50"
                   >
-                    Delhi Airport to Jaipur Cab (₹3,200)
+                    Delhi Airport to Jaipur Cab
                   </button>
                 </div>
               )}
@@ -275,7 +275,7 @@ export const Header: React.FC = () => {
 
             {/* Destinations */}
             <button 
-              onClick={() => navigate('/tour-by-destination/jaipur')}
+              onClick={() => navigate('/tour-by-destination')}
               className={`flex items-center gap-1.5 px-0.5 py-2 text-[13px] font-semibold rounded-md transition-colors whitespace-nowrap shrink-0 ${
                 isActive('/tour-by-destination') || isActive('/attraction')
                   ? 'text-amber-800 bg-amber-50' 
@@ -381,10 +381,10 @@ export const Header: React.FC = () => {
               Travel Guide & Blogs (14)
             </button>
             <button 
-              onClick={() => { navigate('/tour-by-destination/jaipur'); setIsMobileMenuOpen(false); }}
+              onClick={() => { navigate('/tour-by-destination'); setIsMobileMenuOpen(false); }}
               className="text-left px-3 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50"
             >
-              Destinations (8 Cities)
+              Destinations (9 Cities)
             </button>
             <button 
               onClick={() => { navigate('/b2b-rajasthan-dmc'); setIsMobileMenuOpen(false); }}

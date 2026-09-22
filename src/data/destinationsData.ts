@@ -6,9 +6,16 @@ export const DESTINATIONS: Destination[] = [
     slug: 'jaipur',
     name: 'Jaipur',
     nickname: 'The Pink City',
+    tagline: 'The Pink City of Royal Palaces',
     image: 'images/destinations/jaipur-citytour.webp',
     description: 'Capital of Rajasthan, famed for terracotta-pink palaces, hill forts Amer and Nahargarh, royal observatories, and vibrant gemstone bazaars.',
     bestTimeToVisit: 'October to March',
+    idealDays: '2-3 Days',
+    connectivity: {
+      airport: 'Jaipur International Airport (JAI)',
+      railway: 'Jaipur Junction (JP)',
+      road: 'NH-48 Delhi-Mumbai Expressway'
+    },
     popularFor: ['Royal Forts & Palaces', 'Block Print Textiles', 'Jewellery & Handicrafts', 'Dal Baati Churma'],
     tourCount: 14,
     topAttractions: [
@@ -82,9 +89,16 @@ export const DESTINATIONS: Destination[] = [
     slug: 'udaipur',
     name: 'Udaipur',
     nickname: 'The City of Lakes',
+    tagline: 'The Romantic City of Lakes',
     image: 'images/destinations/udaipur-citytour.webp',
     description: 'The romantic capital of Mewar, cradled around Lake Pichola and Fateh Sagar, world-renowned for white marble palaces and sunset ghats.',
     bestTimeToVisit: 'September to March',
+    idealDays: '2-3 Days',
+    connectivity: {
+      airport: 'Maharana Pratap Airport (UDR)',
+      railway: 'Udaipur City Station (UDZ)',
+      road: 'NH-48 / NH-27'
+    },
     popularFor: ['Lakeside Palaces', 'Sunset Boat Cruises', 'Miniature Paintings', 'Romantic Dining'],
     tourCount: 16,
     topAttractions: [
@@ -149,9 +163,16 @@ export const DESTINATIONS: Destination[] = [
     slug: 'jodhpur',
     name: 'Jodhpur',
     nickname: 'The Blue City & Sun City',
+    tagline: 'The Blue City Beneath Mehrangarh',
     image: 'images/destinations/jodhpur-citytour.webp',
     description: 'Gateway to the Thar desert, crowned by the colossal Mehrangarh Fort towering above an undulating sea of indigo-painted houses.',
     bestTimeToVisit: 'October to March',
+    idealDays: '1-2 Days',
+    connectivity: {
+      airport: 'Jodhpur Airport (JDH)',
+      railway: 'Jodhpur Junction (JU)',
+      road: 'NH-62'
+    },
     popularFor: ['Mehrangarh Fort', 'Blue Alleys Walk', 'Mirchi Vada & Makhaniya Lassi', 'Umaid Bhawan Palace'],
     tourCount: 12,
     topAttractions: [
@@ -207,9 +228,16 @@ export const DESTINATIONS: Destination[] = [
     slug: 'jaisalmer',
     name: 'Jaisalmer',
     nickname: 'The Golden City',
+    tagline: 'The Golden City of the Thar',
     image: 'images/destinations/jaisalmer.webp',
     description: 'Golden sandstone fortress in the heart of the Great Indian Thar Desert, famous for living fort streets, sand dunes, and desert camel safaris.',
     bestTimeToVisit: 'October to March',
+    idealDays: '2 Days',
+    connectivity: {
+      airport: 'Jaisalmer Airport (JSA)',
+      railway: 'Jaisalmer Railway Station (JSM)',
+      road: 'NH-11'
+    },
     popularFor: ['Sonar Qila Living Fort', 'Sam Sand Dunes', 'Desert Camping', 'Carved Havelis'],
     tourCount: 10,
     topAttractions: [
@@ -265,9 +293,16 @@ export const DESTINATIONS: Destination[] = [
     slug: 'ajmer',
     name: 'Ajmer',
     nickname: 'The Sufi Pilgrimage City',
+    tagline: 'The Sufi Pilgrimage City',
     image: 'images/destinations/ajmer-pushkar.webp',
     description: 'Historic city on the banks of Ana Sagar Lake, crowned by the revered Sufi shrine of Khwaja Moinuddin Chishti that draws pilgrims of all faiths from across South Asia.',
     bestTimeToVisit: 'October to March',
+    idealDays: '1 Day',
+    connectivity: {
+      airport: 'Kishangarh Airport (KQH)',
+      railway: 'Ajmer Junction (AII)',
+      road: 'NH-48'
+    },
     popularFor: ['Ajmer Sharif Dargah', 'Ana Sagar Lake', 'Adhai Din Ka Jhonpra', 'Taragarh Fort Views'],
     tourCount: 7,
     topAttractions: [
@@ -314,9 +349,16 @@ export const DESTINATIONS: Destination[] = [
     slug: 'pushkar',
     name: 'Pushkar',
     nickname: 'The Holy Lake Town',
+    tagline: 'The Holy Lake & Camel Fair Town',
     image: 'images/blog/festivals-rajasthan.webp',
     description: 'Sacred pilgrimage town wrapped around a mythical holy lake, home to the world’s most prominent Brahma Temple and the world-famous Pushkar Camel Fair.',
     bestTimeToVisit: 'October to March (Pushkar Mela in November)',
+    idealDays: '1-2 Days',
+    connectivity: {
+      airport: 'Kishangarh Airport (KQH)',
+      railway: 'Ajmer Junction (AII)',
+      road: 'NH-48'
+    },
     popularFor: ['Lord Brahma Temple', 'Pushkar Holy Lake Ghats', 'Pushkar Camel Fair', 'Ropeway Sunset Views'],
     tourCount: 9,
     topAttractions: [
@@ -363,9 +405,16 @@ export const DESTINATIONS: Destination[] = [
     slug: 'bikaner',
     name: 'Bikaner',
     nickname: 'Camel Country & Desert Citadels',
+    tagline: 'The Desert Citadel of Junagarh',
     image: 'images/destinations/bikaner-citytour.webp',
     description: 'Northern desert stronghold founded in 1488 by Rao Bika, celebrated for the unconquered Junagarh Fort, red sandstone Lalgarh Palace, and legendary spicy delicacies.',
     bestTimeToVisit: 'October to March',
+    idealDays: '1-2 Days',
+    connectivity: {
+      airport: 'Nal (Bikaner) Airport (BKB)',
+      railway: 'Bikaner Junction (BKN)',
+      road: 'NH-11 / NH-62'
+    },
     popularFor: ['Junagarh Fort', 'Karni Mata Temple', 'Bikaneri Bhujia & Sweets', 'Camel Breeding Farm'],
     tourCount: 8,
     topAttractions: [
@@ -403,9 +452,16 @@ export const DESTINATIONS: Destination[] = [
     slug: 'mount-abu',
     name: 'Mount Abu',
     nickname: 'Rajasthans Only Hill Station',
+    tagline: 'The Only Hill Station of Rajasthan',
     image: 'images/destinations/mount-abu.webp',
     description: 'Refreshing pine-covered mountain sanctuary sitting at 1,220 meters in the southern Aravallis, home to the breathtaking Dilwara marble temples and Nakki Lake.',
     bestTimeToVisit: 'Year Round (Pleasant retreat even during summer)',
+    idealDays: '2 Days',
+    connectivity: {
+      airport: 'Maharana Pratap Airport Udaipur (UDR)',
+      railway: 'Abu Road Station (ABR)',
+      road: 'NH-27'
+    },
     popularFor: ['Dilwara Marble Temples', 'Nakki Lake Boating', 'Guru Shikhar Peak', 'Pleasant Weather'],
     tourCount: 6,
     topAttractions: [
@@ -443,9 +499,16 @@ export const DESTINATIONS: Destination[] = [
     slug: 'sawai-madhopur',
     name: 'Sawai Madhopur & Ranthambore',
     nickname: 'Realm of the Royal Bengal Tiger',
+    tagline: 'The Realm of the Royal Bengal Tiger',
     image: 'images/destinations/ranthambore-citytour.webp',
     description: 'Former hunting grounds of the Maharajas of Jaipur, now one of India’s most celebrated national parks where tigers roam freely around ancient palace ruins.',
     bestTimeToVisit: 'October to May (Park closed July-September)',
+    idealDays: '2 Days (incl. Safaris)',
+    connectivity: {
+      airport: 'Jaipur International Airport (JAI)',
+      railway: 'Sawai Madhopur Station (SWM)',
+      road: 'NH-552 Ranthambore Road'
+    },
     popularFor: ['Bengal Tiger Safaris', 'UNESCO Ranthambore Fort', 'Leopards & Marsh Crocodiles', 'Jungle Resorts'],
     tourCount: 7,
     topAttractions: [

@@ -137,9 +137,8 @@ export const ActivitiesPage: React.FC = () => {
                 {/* Pricing & CTA */}
                 <div className="pt-3 border-t border-stone-100 flex items-center justify-between">
                   <div>
-                    <span className="text-[10px] text-slate-400 block">From</span>
-                    <strong className="text-base font-bold text-slate-900">₹{act.pricePerPerson.toLocaleString('en-IN')}</strong>
-                    <span className="text-[10px] text-slate-500 ml-1">/ person</span>
+                    <span className="text-[10px] text-slate-400 block">Booking</span>
+                    <strong className="text-base font-bold text-amber-700">Quote on Request</strong>
                   </div>
 
                   <div className="flex items-center gap-2">
