@@ -23,7 +23,7 @@ export const DESTINATIONS: Destination[] = [
         slug: 'amer-fort',
         name: 'Amer (Amber) Fort & Palace',
         type: 'Fort',
-        image: 'images/packages/jaipur-amber-fort.jpg',
+        image: 'images/sites/amer-fort.webp',
         shortDescription: 'Magnificent 16th-century fortress on hilltop featuring the legendary Sheesh Mahal (Mirror Palace) and royal courtyards.',
         timing: '8:00 AM - 5:30 PM, Light Show 7:00 PM',
         entryFee: 'INR 100 (Indians), INR 500 (Foreigners)'
@@ -89,8 +89,7 @@ export const DESTINATIONS: Destination[] = [
     slug: 'udaipur',
     name: 'Udaipur',
     nickname: 'The City of Lakes',
-    tagline: 'The Romantic City of Lakes',
-    image: 'images/destinations/udaipur-citytour.webp',
+    image: 'images/sites/lake-pichola-sunset.webp',
     description: 'The romantic capital of Mewar, cradled around Lake Pichola and Fateh Sagar, world-renowned for white marble palaces and sunset ghats.',
     bestTimeToVisit: 'September to March',
     idealDays: '2-3 Days',
@@ -106,7 +105,7 @@ export const DESTINATIONS: Destination[] = [
         slug: 'city-palace-udaipur',
         name: 'City Palace Complex Udaipur',
         type: 'Palace',
-        image: 'images/packages/udaipur-city-palace.jpg',
+        image: 'images/sites/udaipur-city-palace.webp',
         shortDescription: 'The largest palace complex in Rajasthan, towering over Lake Pichola with mirrored balconies, marble domes, and Mewar treasury.',
         timing: '9:00 AM - 5:30 PM',
         entryFee: 'INR 330 (Adults)'
@@ -115,7 +114,7 @@ export const DESTINATIONS: Destination[] = [
         slug: 'lake-pichola',
         name: 'Lake Pichola & Jag Mandir Island',
         type: 'Lake',
-        image: 'images/packages/udaipur-city-palace-640.webp',
+        image: 'images/sites/lake-pichola-sunset.webp',
         shortDescription: 'Picturesque freshwater lake created in 1362 AD, hosting the famous Lake Palace (Taj) and historic Jag Mandir island retreat.',
         timing: 'Boating 9:00 AM - 6:00 PM',
         entryFee: 'Boating: INR 450 - 800 per person'
@@ -151,7 +150,7 @@ export const DESTINATIONS: Destination[] = [
         slug: 'jagdish-temple',
         name: 'Jagdish Temple',
         type: 'Temple',
-        image: 'images/packages/udaipur-city-palace-960.webp',
+        image: 'images/sites/jagdish-temple.webp',
         shortDescription: 'Indo-Aryan temple dedicated to Lord Vishnu built in 1651 AD, adorned with intricate pillar carvings and active prayer chants.',
         timing: '4:15 AM - 1:00 PM, 5:15 PM - 8:00 PM',
         entryFee: 'Free'
@@ -294,7 +293,7 @@ export const DESTINATIONS: Destination[] = [
     name: 'Ajmer',
     nickname: 'The Sufi Pilgrimage City',
     tagline: 'The Sufi Pilgrimage City',
-    image: 'images/destinations/ajmer-dargah.webp',
+    image: 'images/sites/ajmer-sharif-dargah.webp',
     description: 'Historic city on the banks of Ana Sagar Lake, crowned by the revered Sufi shrine of Khwaja Moinuddin Chishti that draws pilgrims of all faiths from across South Asia.',
     bestTimeToVisit: 'October to March',
     idealDays: '1 Day',
@@ -310,7 +309,7 @@ export const DESTINATIONS: Destination[] = [
         slug: 'ajmer-sharif-dargah',
         name: 'Dargah Sharif Ajmer',
         type: 'Shrine',
-        image: 'images/destinations/ajmer-dargah.webp',
+        image: 'images/sites/ajmer-sharif-dargah.webp',
         shortDescription: 'One of the most sacred pilgrimage shrines in South Asia, venerated by people of all faiths, with soulful evening qawwali music.',
         timing: '5:00 AM - 10:00 PM',
         entryFee: 'Free'
@@ -534,7 +533,7 @@ export const DESTINATIONS: Destination[] = [
         slug: 'padam-talao',
         name: 'Padam Talao & Jogi Mahal',
         type: 'Lake & Palace',
-        image: 'images/packages/ranthambore-safari-960.webp',
+        image: 'images/sites/padam-talao.webp',
         shortDescription: 'Largest water lake inside the park where wild animals gather to drink and near which stands the second largest Banyan tree in India.',
         timing: 'During park safari hours',
         entryFee: 'Included in safari'
