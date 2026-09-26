@@ -211,7 +211,7 @@ export const ACTIVITIES: ActivityExperience[] = [
     location: 'Pushkar Lake & Brahma Temple',
     duration: '2 Hours',
     pricePerPerson: 750,
-    image: 'images/destinations/ajmer-pushkar.webp',
+    image: 'images/blog/festivals-rajasthan.webp',
     description: 'Experience the mystical tranquility of Pushkar before the town awakens. Walk the marble ghats where priests chant ancient Sanskrit mantras, offer lotus petals into the waters, and visit the rare Jagatpita Brahma Temple.',
     highlights: [
       'Peaceful morning walk around sacred Brahma and Varaha ghats',

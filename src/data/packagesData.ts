@@ -4,13 +4,13 @@ const CUSTOMISATION_INCLUSIONS = [
   '3* / 4* / 5* hotel options as per selected category',
   'Breakfast or MAP (Breakfast + Dinner) meal plan',
   'Private air-conditioned vehicle with experienced driver',
-  'Professional local guides as required',
   'Safari permits & desert camp (subject to availability)',
   'Cultural evenings & folk programmes as required',
   'Airport / railway transfers'
 ];
 
 const CUSTOMISATION_EXCLUSIONS = [
+  'Professional local guide / tour guide charges',
   'Monument entrance tickets & camera fees',
   'Airfare / train tickets to and from Rajasthan',
   'Meals not part of the selected meal plan',
